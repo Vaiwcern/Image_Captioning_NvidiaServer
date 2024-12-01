@@ -19516,3 +19516,4 @@ cv2.error: OpenCV(4.10.0) /io/opencv/modules/imgproc/src/color.cpp:196: error: (
 2024-12-01 19:32:27,875 - ERROR - Error in process_batch for step 1: [Errno 2] No such file or directory: '/home/ltnghia02/prompts/5/prompt_step_1.txt'
 2024-12-01 19:32:27,875 - ERROR - Error processing batch: [Errno 2] No such file or directory: '/home/ltnghia02/prompts/5/prompt_step_1.txt'
 2024-12-01 20:26:23,955 - INFO - Loading processor and model
+2024-12-01 20:30:29,542 - INFO - Loading processor and model
