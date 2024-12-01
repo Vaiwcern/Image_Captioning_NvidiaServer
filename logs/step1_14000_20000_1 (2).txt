@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/ltnghia02/vischronos/scripts/first.py", line 2, in <module>
+    import torch, torchvision
+ModuleNotFoundError: No module named 'torch'
