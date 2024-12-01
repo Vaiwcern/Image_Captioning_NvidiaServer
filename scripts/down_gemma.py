@@ -14,7 +14,7 @@ model = AutoModelForCausalLM.from_pretrained(
     torch_dtype=torch.bfloat16
 )
 
-save_directory = "gemma_model"
+save_directory = "/home/ltnghia02/models/gemma_model"
 print("Saving tokenizer...")
 tokenizer.save_pretrained(save_directory)
 print("Saving model...")

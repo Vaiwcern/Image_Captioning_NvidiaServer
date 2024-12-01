@@ -6,7 +6,7 @@ END_INDEX=$2
 IMG_INDEX=$3
 
 # Define base log directory
-LOG_DIR="/home/ltnghia02/logs"
+LOG_DIR="/home/ltnghia02/vischronos/logs"
 
 # Base log file name
 BASE_LOG_FILE="step234_${BEGIN_INDEX}_${END_INDEX}_${IMG_INDEX}.txt"
@@ -20,8 +20,8 @@ while [ -e "$LOG_FILE" ]; do
 done
 
 # Run the process
-nohup python3 /home/ltnghia02/scripts/second.py \
-  /home/ltnghia02/dataset/ /home/ltnghia02/prompts/4 \
+nohup python3 /home/ltnghia02/vischronos/scripts/second.py \
+  /home/ltnghia02/dataset/ /home/ltnghia02/vischronos/prompts/4 \
   --begin_index "$BEGIN_INDEX" --end_index "$END_INDEX" --img_index "$IMG_INDEX" \
   > "$LOG_FILE" 2>&1 &
 

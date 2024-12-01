@@ -1,5 +1,6 @@
 # for calling gpt api
 openai
+
 # for crawling the-guardian
 pandas
 requests
@@ -11,6 +12,7 @@ transformers
 torch
 chardet
 accelerate
+
 # for running molmo
 torch>=1.9.0
 torchvision>=0.10.0
