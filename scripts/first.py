@@ -29,7 +29,7 @@ from transformers.image_utils import (
 )
 
 # Set up logging
-logging.basicConfig(filename='/home/ltnghia02/logs/script_execution1.log', level=logging.INFO,
+logging.basicConfig(filename='/home/ltnghia02/vischronos/logs/script_execution1.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 # %%
@@ -59,7 +59,7 @@ except Exception as e:
     logging.error(f"Error loading processor or model: {str(e)}")
     print(traceback.format_exc())
     raise
-log_success_files = open('/home/ltnghia02/logs/success_files.txt', 'w')
+log_success_files = open('/home/ltnghia02/vischronos/logs/success_files.txt', 'w')
 
 # %%
 # Custom Dataset
