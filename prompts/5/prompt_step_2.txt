@@ -1,0 +1,21 @@
+Create at least fifteen questions based on this caption: {}.
+
+Assume you know nothing about the event in the image and are curious to understand it fully. Your questions should cover:
+
+The timing of the event
+The context or reason behind it
+The main events that occurred
+The outcome
+The impact
+The people or objects in the image
+Any significant figures involved
+The location where the event took place
+The historical or cultural background relevant to the event
+The reactions of those involved or affected by the event
+The significance or symbolism of objects in the image
+The sequence of events leading up to the image
+Any possible consequences or future implications of the event
+The emotions or expressions of the people in the image
+Any unusual or noteworthy elements in the image
+
+Strictly return at least 15 questions, and nothing else.

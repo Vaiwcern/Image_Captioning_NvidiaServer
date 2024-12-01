@@ -1,0 +1,11 @@
+Generate a highly detailed caption for this image. Provide a comprehensive description covering the following aspects:
+
+Objects: Identify and describe all visible objects, including their size, shape, color, and texture.
+People: Describe each person’s identity, appearance, clothing, and any visible features. Note their positions, actions, and interactions.
+Actions: Detail any activities, movements, or gestures taking place in the image. Explain what the people are doing and how they are interacting with each other or with objects.
+Emotions: Convey the emotions and expressions of the people in the image. Mention any visible feelings or moods.
+Context: Include any relevant context or background information that can be inferred from the image, such as the setting or environment.
+Details: Note any significant or unusual elements in the image, including items or features that stand out.
+
+Use the short description provided to enhance the caption: {short_description}.
+The image is provided below.

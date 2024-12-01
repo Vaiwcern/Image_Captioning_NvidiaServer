@@ -1,0 +1,55 @@
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.02s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.03it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.07it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.09it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.07it/s]
+Starting...
+Index: b = 14000, e = 20000, i = 1
+Processing dataset...
+Processing /home/ltnghia02/dataset/14003/14003.1
+DONE: 102.95s
+Processing /home/ltnghia02/dataset/14004/14004.1
+DONE: 98.38s
+Processing /home/ltnghia02/dataset/14005/14005.1
+DONE: 91.60s
+Processing /home/ltnghia02/dataset/14006/14006.1
+DONE: 115.98s
+Processing /home/ltnghia02/dataset/14007/14007.1
+DONE: 106.92s
+Processing /home/ltnghia02/dataset/14008/14008.1
+DONE: 81.42s
+Processing /home/ltnghia02/dataset/14009/14009.1
+DONE: 141.62s
+Processing /home/ltnghia02/dataset/14010/14010.1
+DONE: 129.08s
+Processing /home/ltnghia02/dataset/14015/14015.1
+DONE: 112.40s
+Processing /home/ltnghia02/dataset/14016/14016.1
+DONE: 88.82s
+Processing /home/ltnghia02/dataset/14018/14018.1
+DONE: 103.69s
+Processing /home/ltnghia02/dataset/14021/14021.1
+DONE: 91.29s
+Processing /home/ltnghia02/dataset/14022/14022.1
+DONE: 109.40s
+Processing /home/ltnghia02/dataset/14023/14023.1
+DONE: 103.64s
+Processing /home/ltnghia02/dataset/14024/14024.1
+DONE: 103.97s
+Processing /home/ltnghia02/dataset/14025/14025.1
+DONE: 141.15s
+Processing /home/ltnghia02/dataset/14027/14027.1
+DONE: 127.16s
+Processing /home/ltnghia02/dataset/14028/14028.1
+DONE: 129.58s
+Processing /home/ltnghia02/dataset/14030/14030.1
+DONE: 121.57s
+Processing /home/ltnghia02/dataset/14031/14031.1
+DONE: 93.75s
+Processing /home/ltnghia02/dataset/14032/14032.1
+DONE: 124.66s
+Processing /home/ltnghia02/dataset/14033/14033.1
+DONE: 94.38s
+Processing /home/ltnghia02/dataset/14036/14036.1
+DONE: 97.55s
+Processing /home/ltnghia02/dataset/14039/14039.1
+DONE: 101.13s
+Processing /home/ltnghia02/dataset/14041/14041.1
+DONE: 111.47s
+Processing /home/ltnghia02/dataset/14043/14043.1

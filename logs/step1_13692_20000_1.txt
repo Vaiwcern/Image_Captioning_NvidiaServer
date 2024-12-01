@@ -1,0 +1,80 @@
+nohup: ignoring input
+Loading checkpoint shards:   0%|          | 0/83 [00:00<?, ?it/s]Loading checkpoint shards:   1%|          | 1/83 [00:01<02:31,  1.85s/it]Loading checkpoint shards:   2%|▏         | 2/83 [00:03<02:15,  1.67s/it]Loading checkpoint shards:   4%|▎         | 3/83 [00:04<01:59,  1.50s/it]Loading checkpoint shards:   5%|▍         | 4/83 [00:05<01:50,  1.40s/it]Loading checkpoint shards:   6%|▌         | 5/83 [00:07<01:42,  1.32s/it]Loading checkpoint shards:   7%|▋         | 6/83 [00:08<01:46,  1.38s/it]Loading checkpoint shards:   8%|▊         | 7/83 [00:09<01:33,  1.23s/it]Loading checkpoint shards:  10%|▉         | 8/83 [00:10<01:28,  1.18s/it]Loading checkpoint shards:  11%|█         | 9/83 [00:11<01:18,  1.06s/it]Loading checkpoint shards:  12%|█▏        | 10/83 [00:12<01:14,  1.02s/it]Loading checkpoint shards:  13%|█▎        | 11/83 [00:13<01:10,  1.02it/s]Loading checkpoint shards:  14%|█▍        | 12/83 [00:14<01:08,  1.04it/s]Loading checkpoint shards:  16%|█▌        | 13/83 [00:14<01:03,  1.10it/s]Loading checkpoint shards:  17%|█▋        | 14/83 [00:15<01:03,  1.08it/s]Loading checkpoint shards:  18%|█▊        | 15/83 [00:16<01:04,  1.06it/s]Loading checkpoint shards:  19%|█▉        | 16/83 [00:17<01:00,  1.10it/s]Loading checkpoint shards:  20%|██        | 17/83 [00:18<01:01,  1.07it/s]Loading checkpoint shards:  22%|██▏       | 18/83 [00:19<01:01,  1.05it/s]Loading checkpoint shards:  23%|██▎       | 19/83 [00:21<01:08,  1.08s/it]Loading checkpoint shards:  24%|██▍       | 20/83 [00:22<01:08,  1.08s/it]Loading checkpoint shards:  25%|██▌       | 21/83 [00:23<01:09,  1.12s/it]Loading checkpoint shards:  27%|██▋       | 22/83 [00:24<01:06,  1.09s/it]Loading checkpoint shards:  28%|██▊       | 23/83 [00:25<01:07,  1.12s/it]Loading checkpoint shards:  29%|██▉       | 24/83 [00:26<01:08,  1.17s/it]Loading checkpoint shards:  30%|███       | 25/83 [00:28<01:09,  1.20s/it]Loading checkpoint shards:  31%|███▏      | 26/83 [00:29<01:12,  1.28s/it]Loading checkpoint shards:  33%|███▎      | 27/83 [00:30<01:10,  1.25s/it]Loading checkpoint shards:  34%|███▎      | 28/83 [00:31<01:06,  1.21s/it]Loading checkpoint shards:  35%|███▍      | 29/83 [00:33<01:07,  1.24s/it]Loading checkpoint shards:  36%|███▌      | 30/83 [00:34<01:07,  1.27s/it]Loading checkpoint shards:  37%|███▋      | 31/83 [00:35<01:04,  1.24s/it]Loading checkpoint shards:  39%|███▊      | 32/83 [00:37<01:05,  1.29s/it]Loading checkpoint shards:  40%|███▉      | 33/83 [00:38<01:00,  1.21s/it]Loading checkpoint shards:  41%|████      | 34/83 [00:39<01:03,  1.29s/it]Loading checkpoint shards:  42%|████▏     | 35/83 [00:41<01:13,  1.54s/it]Loading checkpoint shards:  43%|████▎     | 36/83 [00:43<01:13,  1.56s/it]Loading checkpoint shards:  45%|████▍     | 37/83 [00:44<01:06,  1.44s/it]Loading checkpoint shards:  46%|████▌     | 38/83 [00:45<00:59,  1.32s/it]Loading checkpoint shards:  47%|████▋     | 39/83 [00:46<00:52,  1.20s/it]Loading checkpoint shards:  48%|████▊     | 40/83 [00:47<00:53,  1.25s/it]Loading checkpoint shards:  49%|████▉     | 41/83 [00:48<00:50,  1.21s/it]Loading checkpoint shards:  51%|█████     | 42/83 [00:50<00:49,  1.20s/it]Loading checkpoint shards:  52%|█████▏    | 43/83 [00:51<00:48,  1.20s/it]Loading checkpoint shards:  53%|█████▎    | 44/83 [00:53<00:52,  1.35s/it]Loading checkpoint shards:  54%|█████▍    | 45/83 [00:54<00:50,  1.34s/it]Loading checkpoint shards:  55%|█████▌    | 46/83 [00:56<00:53,  1.45s/it]Loading checkpoint shards:  57%|█████▋    | 47/83 [00:57<00:51,  1.44s/it]Loading checkpoint shards:  58%|█████▊    | 48/83 [00:58<00:45,  1.30s/it]Loading checkpoint shards:  59%|█████▉    | 49/83 [00:59<00:41,  1.21s/it]Loading checkpoint shards:  60%|██████    | 50/83 [01:00<00:37,  1.12s/it]Loading checkpoint shards:  61%|██████▏   | 51/83 [01:01<00:34,  1.06s/it]Loading checkpoint shards:  63%|██████▎   | 52/83 [01:02<00:33,  1.07s/it]Loading checkpoint shards:  64%|██████▍   | 53/83 [01:03<00:30,  1.02s/it]Loading checkpoint shards:  65%|██████▌   | 54/83 [01:04<00:30,  1.06s/it]Loading checkpoint shards:  66%|██████▋   | 55/83 [01:05<00:32,  1.15s/it]Loading checkpoint shards:  67%|██████▋   | 56/83 [01:06<00:30,  1.14s/it]Loading checkpoint shards:  69%|██████▊   | 57/83 [01:08<00:32,  1.27s/it]Loading checkpoint shards:  70%|██████▉   | 58/83 [01:09<00:29,  1.18s/it]Loading checkpoint shards:  71%|███████   | 59/83 [01:10<00:27,  1.16s/it]Loading checkpoint shards:  72%|███████▏  | 60/83 [01:11<00:24,  1.09s/it]Loading checkpoint shards:  73%|███████▎  | 61/83 [01:12<00:23,  1.05s/it]Loading checkpoint shards:  75%|███████▍  | 62/83 [01:13<00:20,  1.01it/s]Loading checkpoint shards:  76%|███████▌  | 63/83 [01:14<00:19,  1.02it/s]Loading checkpoint shards:  77%|███████▋  | 64/83 [01:15<00:18,  1.02it/s]Loading checkpoint shards:  78%|███████▊  | 65/83 [01:16<00:18,  1.01s/it]Loading checkpoint shards:  80%|███████▉  | 66/83 [01:17<00:18,  1.10s/it]Loading checkpoint shards:  81%|████████  | 67/83 [01:18<00:17,  1.09s/it]Loading checkpoint shards:  82%|████████▏ | 68/83 [01:19<00:16,  1.12s/it]Loading checkpoint shards:  83%|████████▎ | 69/83 [01:21<00:18,  1.29s/it]Loading checkpoint shards:  84%|████████▍ | 70/83 [01:23<00:17,  1.36s/it]Loading checkpoint shards:  86%|████████▌ | 71/83 [01:24<00:15,  1.27s/it]Loading checkpoint shards:  87%|████████▋ | 72/83 [01:25<00:13,  1.19s/it]Loading checkpoint shards:  88%|████████▊ | 73/83 [01:26<00:11,  1.11s/it]Loading checkpoint shards:  89%|████████▉ | 74/83 [01:27<00:09,  1.09s/it]Loading checkpoint shards:  90%|█████████ | 75/83 [01:28<00:08,  1.10s/it]Loading checkpoint shards:  92%|█████████▏| 76/83 [01:29<00:08,  1.15s/it]Loading checkpoint shards:  93%|█████████▎| 77/83 [01:30<00:06,  1.11s/it]Loading checkpoint shards:  94%|█████████▍| 78/83 [01:31<00:05,  1.11s/it]Loading checkpoint shards:  95%|█████████▌| 79/83 [01:32<00:04,  1.11s/it]Loading checkpoint shards:  96%|█████████▋| 80/83 [01:33<00:03,  1.13s/it]Loading checkpoint shards:  98%|█████████▊| 81/83 [01:34<00:02,  1.04s/it]Loading checkpoint shards:  99%|█████████▉| 82/83 [01:36<00:01,  1.16s/it]Loading checkpoint shards: 100%|██████████| 83/83 [01:43<00:00,  3.14s/it]Loading checkpoint shards: 100%|██████████| 83/83 [01:43<00:00,  1.25s/it]
+Starting...
+Index: b = 13692, e = 20000, i = 1
+Preprocessing...
+Processing dataset...
+['/home/ltnghia02/dataset/13692/13692.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/13693/13693.1/image.jpg']
+Traceback (most recent call last):
+  File "/home/ltnghia02/scripts/first.py", line 109, in __getitem__
+    image = cv2.cvtColor(cv2.imread(str(img_path)), cv2.COLOR_BGR2RGB)
+cv2.error: OpenCV(4.10.0) /io/opencv/modules/imgproc/src/color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/13694/13694.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/13696/13696.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/13697/13697.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+Traceback (most recent call last):
+  File "/home/ltnghia02/scripts/first.py", line 394, in <module>
+    process_dataset(dataset)
+  File "/home/ltnghia02/scripts/first.py", line 354, in process_dataset
+    for batch in dataloader:
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1465, in _next_data
+    return self._process_data(data)
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1491, in _process_data
+    data.reraise()
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/_utils.py", line 715, in reraise
+    raise exception
+cv2.error: Caught error in DataLoader worker process 1.
+Original Traceback (most recent call last):
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 351, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/ltnghia02/scripts/first.py", line 109, in __getitem__
+    image = cv2.cvtColor(cv2.imread(str(img_path)), cv2.COLOR_BGR2RGB)
+cv2.error: OpenCV(4.10.0) /io/opencv/modules/imgproc/src/color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+
+
+Traceback (most recent call last):
+  File "/home/ltnghia02/scripts/first.py", line 394, in <module>
+    process_dataset(dataset)
+  File "/home/ltnghia02/scripts/first.py", line 354, in process_dataset
+    for batch in dataloader:
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1465, in _next_data
+    return self._process_data(data)
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1491, in _process_data
+    data.reraise()
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/_utils.py", line 715, in reraise
+    raise exception
+cv2.error: Caught error in DataLoader worker process 1.
+Original Traceback (most recent call last):
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 351, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/ltnghia02/scripts/first.py", line 109, in __getitem__
+    image = cv2.cvtColor(cv2.imread(str(img_path)), cv2.COLOR_BGR2RGB)
+cv2.error: OpenCV(4.10.0) /io/opencv/modules/imgproc/src/color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+

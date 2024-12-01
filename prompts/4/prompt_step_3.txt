@@ -1,0 +1,13 @@
+Answer the following questions based on the provided event knowledge and image caption. 
+
+Dense Captioning (a detailed description of an image): {caption}
+Questions (a set of questions generated based on the dense captioning): {questions}
+Knowledge (the full text of an article containing information related to the original image): {knowledge}
+
+Ensure that the answers are accurate, relevant, and directly tied to the context of the original image as described in the dense captioning and the article. For each question:
+Write the question first.
+Write the answer directly below the question.
+If the answer is unknown or uncertain, write 'no information' instead of the answer.
+
+Strictly return only the list of questions and their answers, and nothing else.
+

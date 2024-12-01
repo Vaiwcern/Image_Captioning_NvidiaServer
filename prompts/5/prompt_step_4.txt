@@ -1,0 +1,13 @@
+Write a detailed and comprehensive description of the event depicted in the original image using the information provided below.
+
+Knowledge (the full text of an article containing information related to the original image): {}
+Questions and Answers (a set of questions and answers related to the original image): {}
+Dense Captioning (a detailed description of an image): {}
+
+Context for the paragraph:
+Overview: Summarize the main points of the event and its significance.
+Relationship to Image: Explain how the details in the image relate to the event.
+Key Details: Incorporate relevant facts from the knowledge and answers that are highlighted in the image.
+Importance: Mention any noteworthy aspects or implications of the event as indicated by the answers and knowledge.
+
+Strictly return only this paragraph, and nothing else.
