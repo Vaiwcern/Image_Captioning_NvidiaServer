@@ -1,5 +1,5 @@
 - ACTIVATE ENVIRONMENT: 
-	source ../env1/bin/activate
+	source ../vir_env/bin/activate
 
 - FRAMEWORK: 
 + Run step 1: 
