@@ -41,7 +41,7 @@ try:
         custom_model_path,
         trust_remote_code=True,
         torch_dtype=torch.float16,
-        device_map={0: "auto", 1: "auto", 2: "auto", 3: "auto"}  # Sử dụng GPU 0, 1, 2, 3
+        device_map={0: 'cuda:0', 1: 'cuda:1'}
     )
 
     # Load model with explicit device handling
@@ -49,10 +49,7 @@ try:
         custom_model_path,
         trust_remote_code=True,
         torch_dtype=torch.float16,
-        device_map={0: "auto", 1: "auto", 2: "auto", 3: "auto"},  # Sử dụng GPU 0, 1, 2, 3
-        max_position_embeddings=8192,
-        max_memory={0: "80GB", 1: "80GB", 2: "80GB", 3: "80GB",
-                    4: "0GB", 5: "0GB", 6: "0GB", 7: "0GB"}  # Phân bổ bộ nhớ cho từng GPU
+        device_map={0: 'cuda:0', 1: 'cuda:1'}  
     )
 except Exception as e:
     logging.error(f"Error loading processor or model: {str(e)}")
