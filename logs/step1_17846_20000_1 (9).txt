@@ -28,3 +28,96 @@ DONE
 STEP 1: CAPTIONING
 DONE
 ['/home/ltnghia02/dataset/17859/17859.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17860/17860.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17862/17862.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17867/17867.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17868/17868.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17870/17870.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17871/17871.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17873/17873.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17875/17875.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17876/17876.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17878/17878.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17879/17879.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17880/17880.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17881/17881.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17882/17882.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17883/17883.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17884/17884.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17885/17885.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17887/17887.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17888/17888.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17889/17889.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17890/17890.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17891/17891.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17892/17892.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17893/17893.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17895/17895.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17896/17896.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17897/17897.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17898/17898.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17899/17899.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17903/17903.1/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/17904/17904.1/image.jpg']
