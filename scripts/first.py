@@ -17,6 +17,7 @@ import logging
 import traceback
 import argparse
 import chardet
+import os
 
 
 from typing import List, Optional, Union, Mapping
