@@ -41,20 +41,20 @@ try:
         custom_model_path,
         trust_remote_code=True,
         torch_dtype=torch.float16,
-        device_map='auto'
-        # max_memory='auto'
+        device_map={0: "auto", 1: "auto"}  # Sử dụng GPU 0 và GPU 1
     )
 
+    # Load model
     molmo_model = AutoModelForCausalLM.from_pretrained(
         custom_model_path,
         trust_remote_code=True,
         torch_dtype=torch.float16,
-        device_map='auto',
+        device_map={0: "auto", 1: "auto"},  # Sử dụng GPU 0 và GPU 1
         max_position_embeddings=8192,
-        # max_memory={0: "40GB", 1: "40GB", 2: "40GB", 3: "40GB", }
         max_memory={0: "80GB", 1: "80GB", 2: "0GB", 3: "0GB",
                     4: "0GB", 5: "0GB", 6: "0GB", 7: "0GB"}
     )
+
 except Exception as e:
     logging.error(f"Error loading processor or model: {str(e)}")
     print(traceback.format_exc())
@@ -66,7 +66,6 @@ log_success_files = open('/home/ltnghia02/vischronos/logs/success_files.txt', 'w
 class ImageTextDataset(Dataset):
     def __init__(self, root_dir, df, bidx: int, eidx: int, iidx: int):
         self.root_dir = root_dir
-        # print("Root dir: ", self.root_dir)
         self.df = df
 
         root_p = Path(root_dir)
@@ -81,9 +80,6 @@ class ImageTextDataset(Dataset):
             ),
             key=lambda x: float(Path(x).parts[-2])
         )
-
-        # print("Samples: ", self.samples)
-        # print(type(self.samples))
 
         self.target_size = (512, 512)
 
@@ -193,7 +189,6 @@ def process_batch(
 ):
     try:
         images, short_captions, articles, img_paths = batch
-        # print(len(images))
         prompts_list = []
         print(img_paths)
         log_success_files.write(f"Currently processing: {str(img_paths)}")
@@ -202,33 +197,11 @@ def process_batch(
                                   template_prompt)
         generated_texts = []
 
-        # print(lst_prompts)
-        # tmp = torch.permute(images[0], (2, 0, 1))
-        # print(tmp.shape)
-        # obj = T.ToPILImage(mode='RGB')(tmp)
-        # print(type(obj))
-        # print(obj.size)
-
-        # inputs = processor.process(images=[images[0].numpy()], text=lst_prompts[0])
         input_list = [
             molmo_processor.process(images=[image.numpy()], text=prompt) for image, prompt in zip(images, prompts_list)
         ]
-        # inputs = {k: v.to(model.device).unsqueeze(0) for k, v in inputs.items()}
 
         inputs = {}
-
-        # print(input_list[0].keys())
-
-        # print(list(map(lambda x: x.shape, input_list[0].values())))
-        # print(list(map(lambda x: x.shape, input_list[-1].values())))
-
-        # padding_token_id = processor.tokenizer.pad_token_id
-
-        # input_ids_list = [item['input_ids'] for item in input_list]
-
-        # padded_input_ids = pad_sequence(input_ids_list, batch_first=True, padding_value=padding_token_id).to(torch.int64)
-
-        # inputs['input_ids'] = padded_input_ids.to(model.device)
 
         padding_token_id = molmo_processor.tokenizer.pad_token_id
 
@@ -251,28 +224,11 @@ def process_batch(
         inputs = {}
         inputs['input_ids'] = padded_input_ids.to(molmo_model.device)
 
-        # inputs['images'] = [item['images'] for item in input_list]
-
         for k in input_list[0].keys():
 
             if (k in inputs):
                 continue
             inputs[k] = torch.stack([input[k] for input in input_list]).to(molmo_model.device)
-
-            # print('hello 98fwduisj')
-            # print(input_list[0][k].shape)
-            # print(inputs[k].shape)
-
-        # inputs = custom_tokenize_process(processor, images = list(map(lambda x: x.numpy(), images)), text_list=lst_prompts)
-
-        # padded_input = inputs['input_ids'].reshape(1, -1)
-
-        # inputs['images'] = torch.Tensor([inputs['images'].numpy()])
-
-        # inputs['input_ids'] = padded_input
-        # inputs['input_ids'].reshape(1, -1)
-        # print(type(padded_input))
-        # print(inputs)
 
         with torch.autocast(device_type="cuda", dtype=torch.float16):
             outputs = molmo_model.generate_from_batch(
@@ -285,18 +241,6 @@ def process_batch(
                 generated_tokens = outputs[i, inputs['input_ids'].size(1):]
                 generated_text = molmo_processor.tokenizer.decode(generated_tokens, skip_special_tokens=True)
                 generated_texts.append(generated_text)
-
-        # responses = processor.tokenizer.batch_decode(outputs[:, inputs['input_ids'].size(1):], skip_special_tokens=True)
-
-        # print('outputs.shape dfasdasf')
-        # print(outputs.shape)
-        # print(inputs['input_ids'].shape)
-        # generated_tokens = outputs[:, inputs['input_ids'].size(1):]
-        # print('genrated tokens 4r3uejfd')
-        # print(generated_tokens.shape)
-        # responses = processor.tokenizer.batch_decode(generated_tokens, skip_special_tokens=True)
-
-        # Extract generated tokens and decode them to text
 
         return generated_texts, img_paths
 
@@ -350,7 +294,6 @@ def process_dataset(dataset):
     num_workers = 4
     dataloader = DataLoader(dataset, batch_size=1, num_workers=num_workers, pin_memory=True, collate_fn=collate_fn)
 
-    # executor = ThreadPoolExecutor(max_workers=num_workers)
     for batch in dataloader:
         try:
 
@@ -359,10 +302,6 @@ def process_dataset(dataset):
         except Exception as e:
             logging.error(f"Error processing batch: {str(e)}")
             print(traceback.format_exc())
-            # # Use ThreadPoolExecutor for I/O operations
-            # with ThreadPoolExecutor(max_workers=8) as executor:
-            #     executor.map(lambda args: write_results(*args), zip(responses, data_paths, [step]*len(responses)))
-
 
 # %%
 import os
