@@ -41,24 +41,19 @@ try:
         custom_model_path,
         trust_remote_code=True,
         torch_dtype=torch.float16,
-        device_map={0: "auto", 1: "auto"}  # Chỉ sử dụng GPU 0 và GPU 1
+        device_map={0: "auto", 1: "auto", 2: "auto", 3: "auto"}  # Sử dụng GPU 0, 1, 2, 3
     )
 
-    # Load model with explicit device setting
+    # Load model with explicit device handling
     molmo_model = AutoModelForCausalLM.from_pretrained(
         custom_model_path,
         trust_remote_code=True,
         torch_dtype=torch.float16,
-        device_map={0: "auto", 1: "auto"},  # Chỉ sử dụng GPU 0 và GPU 1
+        device_map={0: "auto", 1: "auto", 2: "auto", 3: "auto"},  # Sử dụng GPU 0, 1, 2, 3
         max_position_embeddings=8192,
-        max_memory={0: "80GB", 1: "80GB", 2: "0GB", 3: "0GB",
-                    4: "0GB", 5: "0GB", 6: "0GB", 7: "0GB"},
-        low_cpu_mem_usage=True  # Cấu hình này giúp giảm tải bộ nhớ CPU trong khi tải mô hình
+        max_memory={0: "80GB", 1: "80GB", 2: "80GB", 3: "80GB",
+                    4: "0GB", 5: "0GB", 6: "0GB", 7: "0GB"}  # Phân bổ bộ nhớ cho từng GPU
     )
-
-    # Ensure the model is moved to the right device
-    molmo_model.to(torch.device("cuda:0" if torch.cuda.is_available() else "cpu"))
-
 except Exception as e:
     logging.error(f"Error loading processor or model: {str(e)}")
     print(traceback.format_exc())
