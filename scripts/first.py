@@ -32,6 +32,9 @@ from transformers.image_utils import (
 logging.basicConfig(filename='/home/ltnghia02/vischronos/logs/script_execution1.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
+os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
+os.environ['CUDA_VISIBLE_DEVICES'] = "1,2"
+
 # %%
 # Load data and initialize model/processor
 logging.info("Loading processor and model")
@@ -41,7 +44,7 @@ try:
         custom_model_path,
         trust_remote_code=True,
         torch_dtype=torch.float16,
-        device_map={0: 'cuda:1', 1: 'cuda:2', 2: 'cuda:3', 3: 'cuda:4'}  # Chỉ định 4 GPU cho processor (nếu cần)
+        device_map="auto"  # Chỉ định 4 GPU cho processor (nếu cần)
     )
 
     # Load model với việc phân phối trên 4 GPU
@@ -49,7 +52,7 @@ try:
         custom_model_path,
         trust_remote_code=True,
         torch_dtype=torch.float16,
-        device_map={0: 'cuda:1', 1: 'cuda:2', 2: 'cuda:3', 3: 'cuda:4'}  # Chỉ định 4 GPU cho model
+        device_map="auto" # Chỉ định 4 GPU cho model
     )
 except Exception as e:
     logging.error(f"Error loading processor or model: {str(e)}")
@@ -301,9 +304,6 @@ def process_dataset(dataset):
 
 # %%
 import os
-
-os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
-os.environ['CUDA_VISIBLE_DEVICES'] = "0,1,2,3,4,5,6,7"
 
 if __name__ == '__main__':
     try:
