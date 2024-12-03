@@ -41,15 +41,15 @@ try:
         custom_model_path,
         trust_remote_code=True,
         torch_dtype=torch.float16,
-        device_map={0: 'cuda:0', 1: 'cuda:1'}
+        device_map={0: 'cuda:0', 1: 'cuda:1', 2: 'cuda:2', 3: 'cuda:3'}  # Chỉ định 4 GPU cho processor (nếu cần)
     )
 
-    # Load model with explicit device handling
+    # Load model với việc phân phối trên 4 GPU
     molmo_model = AutoModelForCausalLM.from_pretrained(
         custom_model_path,
         trust_remote_code=True,
         torch_dtype=torch.float16,
-        device_map={0: 'cuda:0', 1: 'cuda:1'}  
+        device_map={0: 'cuda:0', 1: 'cuda:1', 2: 'cuda:2', 3: 'cuda:3'}  # Chỉ định 4 GPU cho model
     )
 except Exception as e:
     logging.error(f"Error loading processor or model: {str(e)}")
