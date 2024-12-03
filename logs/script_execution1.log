@@ -19520,3 +19520,18 @@ cv2.error: OpenCV(4.10.0) /io/opencv/modules/imgproc/src/color.cpp:196: error: (
 2024-12-03 06:42:11,957 - INFO - Loading processor and model
 2024-12-03 06:43:45,643 - INFO - Loading processor and model
 2024-12-03 06:57:15,894 - INFO - Loading processor and model
+2024-12-03 07:05:28,102 - INFO - Loading processor and model
+2024-12-03 07:05:30,384 - ERROR - Error loading processor or model: model.transformer.ln_f.weight doesn't have any device set.
+2024-12-03 07:07:41,842 - INFO - Loading processor and model
+2024-12-03 07:07:47,200 - ERROR - Error loading processor or model: model.transformer.ln_f.weight doesn't have any device set.
+2024-12-03 07:10:34,453 - INFO - Loading processor and model
+2024-12-03 07:10:36,595 - ERROR - Error loading processor or model: model.transformer.ln_f.weight doesn't have any device set.
+2024-12-03 07:17:38,047 - INFO - Loading processor and model
+2024-12-03 07:17:40,359 - ERROR - Error loading processor or model: model.transformer.ln_f.weight doesn't have any device set.
+2024-12-03 07:18:33,888 - INFO - Loading processor and model
+2024-12-03 07:18:35,938 - ERROR - Error loading processor or model: model.transformer.ln_f.weight doesn't have any device set.
+2024-12-03 07:37:17,773 - INFO - Loading processor and model
+2024-12-03 07:37:20,047 - ERROR - Error loading processor or model: model.transformer.ln_f.weight doesn't have any device set.
+2024-12-03 07:40:47,540 - INFO - Loading processor and model
+2024-12-03 07:40:49,765 - ERROR - Error loading processor or model: model.transformer.ln_f.weight doesn't have any device set.
+2024-12-03 07:46:48,510 - INFO - Loading processor and model

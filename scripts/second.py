@@ -16,6 +16,9 @@ except ImportError:
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
+os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
+os.environ['CUDA_VISIBLE_DEVICES'] = "3"
+
 # Load the tokenizer and model from the local directory
 gemma_path = "/home/ltnghia02/models/gemma_model"
 
@@ -228,5 +231,6 @@ if __name__ == "__main__":
 
     print("Processing dataset...")
     process_all_steps(args.dataset_path, args.prompt_path, args.img_index, args.begin_index, args.end_index)
+
 
 

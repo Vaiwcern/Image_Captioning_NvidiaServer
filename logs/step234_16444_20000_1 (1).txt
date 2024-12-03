@@ -1,0 +1,9 @@
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.14it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.09it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.10it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.17it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.14it/s]
+Starting...
+Index: b = 16444, e = 20000, i = 1
+Processing dataset...
+Processing /home/ltnghia02/dataset/16444/16444.1
+DONE: 117.56s
+Processing /home/ltnghia02/dataset/16445/16445.1
+DONE: 215.88s
+Processing /home/ltnghia02/dataset/16448/16448.1

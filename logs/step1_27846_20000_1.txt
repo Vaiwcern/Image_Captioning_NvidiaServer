@@ -1,0 +1,26 @@
+Loading checkpoint shards:   0%|          | 0/83 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/83 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/ltnghia02/vischronos/scripts/first.py", line 48, in <module>
+    molmo_model = AutoModelForCausalLM.from_pretrained(
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 559, in from_pretrained
+    return model_class.from_pretrained(
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4225, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4728, in _load_pretrained_model
+    new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/transformers/modeling_utils.py", line 972, in _load_state_dict_into_meta_model
+    raise ValueError(f"{param_name} doesn't have any device set.")
+ValueError: model.transformer.ln_f.weight doesn't have any device set.
+
+Traceback (most recent call last):
+  File "/home/ltnghia02/vischronos/scripts/first.py", line 48, in <module>
+    molmo_model = AutoModelForCausalLM.from_pretrained(
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 559, in from_pretrained
+    return model_class.from_pretrained(
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4225, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4728, in _load_pretrained_model
+    new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/transformers/modeling_utils.py", line 972, in _load_state_dict_into_meta_model
+    raise ValueError(f"{param_name} doesn't have any device set.")
+ValueError: model.transformer.ln_f.weight doesn't have any device set.
