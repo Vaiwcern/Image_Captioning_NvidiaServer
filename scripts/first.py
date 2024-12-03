@@ -347,7 +347,7 @@ def write_results_batch(responses, data_paths, step):
 
 
 def process_dataset(dataset):
-    num_workers = 8
+    num_workers = 4
     dataloader = DataLoader(dataset, batch_size=1, num_workers=num_workers, pin_memory=True, collate_fn=collate_fn)
 
     # executor = ThreadPoolExecutor(max_workers=num_workers)
