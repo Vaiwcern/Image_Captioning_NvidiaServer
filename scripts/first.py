@@ -52,8 +52,8 @@ try:
         device_map='auto',
         max_position_embeddings=8192,
         # max_memory={0: "40GB", 1: "40GB", 2: "40GB", 3: "40GB", }
-        # max_memory={0: "80GB", 1: "80GB", 2: "80GB", 3: "80GB",
-        #             4: "80GB", 5: "80GB", 6: "80GB", 7: "80GB"}
+        max_memory={0: "80GB", 1: "80GB", 2: "0GB", 3: "0GB",
+                    4: "0GB", 5: "0GB", 6: "0GB", 7: "0GB"}
     )
 except Exception as e:
     logging.error(f"Error loading processor or model: {str(e)}")
