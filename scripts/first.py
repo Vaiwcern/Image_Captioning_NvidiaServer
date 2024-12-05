@@ -34,7 +34,7 @@ logging.basicConfig(filename='/home/ltnghia02/vischronos/logs/script_execution1.
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
-os.environ['CUDA_VISIBLE_DEVICES'] = "1,2"
+os.environ['CUDA_VISIBLE_DEVICES'] = "3,4"
 
 # %%
 # Load data and initialize model/processor
@@ -334,6 +334,7 @@ if __name__ == '__main__':
         logging.error(f"Error in main execution: {str(e)}")
         print(traceback.format_exc())
         raise
+
 
 
 

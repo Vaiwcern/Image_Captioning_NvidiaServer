@@ -19535,3 +19535,4 @@ cv2.error: OpenCV(4.10.0) /io/opencv/modules/imgproc/src/color.cpp:196: error: (
 2024-12-03 07:40:47,540 - INFO - Loading processor and model
 2024-12-03 07:40:49,765 - ERROR - Error loading processor or model: model.transformer.ln_f.weight doesn't have any device set.
 2024-12-03 07:46:48,510 - INFO - Loading processor and model
+2024-12-04 05:44:01,172 - INFO - Loading processor and model

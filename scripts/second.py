@@ -1,36 +1,38 @@
 import sys, os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '.')))
-
-# SETTING UP THE ENVIRONMENT
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
-import os
 import pandas as pd
 import time
 import argparse
-
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '.')))
 try:
     import accelerate
 except ImportError:
     print("Accelerate is not installed.")
-
 script_dir = os.path.dirname(os.path.abspath(__file__))
-
-os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
-os.environ['CUDA_VISIBLE_DEVICES'] = "3"
-
-# Load the tokenizer and model from the local directory
-gemma_path = "/home/ltnghia02/models/gemma_model"
-
-tokenizer = AutoTokenizer.from_pretrained(gemma_path)
-model = AutoModelForCausalLM.from_pretrained(
-    gemma_path,
-    device_map="auto",
-    torch_dtype=torch.bfloat16
-)
-
-# UTILITIES
 import chardet
+
+model = None
+tokenizer = None
+
+# Function to set CUDA_VISIBLE_DEVICES based on user input
+def set_visible_gpus(gpu_ids):
+    os.environ['CUDA_VISIBLE_DEVICES'] = gpu_ids
+    os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
+    print(f"Using GPUs: {gpu_ids}")
+
+def load_model(): 
+    gemma_path = "/home/ltnghia02/models/gemma_model"
+
+    global model, tokenizer
+
+    tokenizer = AutoTokenizer.from_pretrained(gemma_path)
+    model = AutoModelForCausalLM.from_pretrained(
+        gemma_path,
+        device_map="auto",
+        torch_dtype=torch.bfloat16
+    )
+
 
 def read_txt_file(file_path: str) -> str:
     """
@@ -57,13 +59,15 @@ def generate_text(input_text, max_new_tokens=5000):
     """
     input_ids = tokenizer(input_text, return_tensors="pt").to("cuda")
 
-    outputs = model.generate(
-        input_ids=input_ids['input_ids'],
-        max_new_tokens=max_new_tokens,
-        do_sample=True
-    )
+    with torch.no_grad():
+        outputs = model.generate(
+            input_ids=input_ids['input_ids'],
+            max_new_tokens=max_new_tokens,
+            do_sample=True
+        )
     generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
     start_index = len(input_text)
+    torch.cuda.empty_cache()
     return generated_text[start_index:].strip()
 
 def process_step_2(caption: str, prompt: str):
@@ -225,9 +229,14 @@ if __name__ == "__main__":
     parser.add_argument('--begin_index', type=int, help='The starting index of directories to process', default=None)
     parser.add_argument('--end_index', type=int, help='The ending index of directories to process', default=None)
     parser.add_argument('--img_index', type=int, help='The ending index of image to process', default=None)
+    parser.add_argument('--gpu', type=str, default="0", help="Comma-separated list of GPU indices to be used (e.g., '0,1,2').")
+
 
     args = parser.parse_args()
     print(f"Index: b = {args.begin_index}, e = {args.end_index}, i = {args.img_index}")
+
+    set_visible_gpus(args.gpu)
+    load_model()
 
     print("Processing dataset...")
     process_all_steps(args.dataset_path, args.prompt_path, args.img_index, args.begin_index, args.end_index)
