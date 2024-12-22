@@ -17,4 +17,13 @@
 	ps aux | grep first.py
 + Step 234:
 	ps aux | grep second.py
-: GPU usage and jobs running: nvitop
+
+- GPU USAGE: 
+	nvitop
+
+- COPY FILE TO SERVER: 
+	scp <path_to_file> <auto_login_username>@ssh.axisapps.io:/home/ltnghia02
+
+
+
+
