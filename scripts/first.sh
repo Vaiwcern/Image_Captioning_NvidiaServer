@@ -4,6 +4,7 @@
 BEGIN_INDEX=$1
 END_INDEX=$2
 IMG_INDEX=$3
+GPU=$4
 
 # Define base log directory
 LOG_DIR="/home/ltnghia02/vischronos/logs"
@@ -22,7 +23,7 @@ done
 # Run the process
 nohup python3 -u /home/ltnghia02/vischronos/scripts/first.py \
   /home/ltnghia02/dataset /home/ltnghia02/vischronos/prompts/5 \
-  --begin_index "$BEGIN_INDEX" --end_index "$END_INDEX" --img_index "$IMG_INDEX" \
+  --begin_index "$BEGIN_INDEX" --end_index "$END_INDEX" --img_index "$IMG_INDEX" --gpu $GPU\
   > "$LOG_FILE" 2>&1 &
 
 echo "Process started with log file: $LOG_FILE"

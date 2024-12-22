@@ -1,27 +1,27 @@
-# %%
-import torch, torchvision
-from transformers import AutoModelForCausalLM, AutoProcessor, GenerationConfig, AutoTokenizer
-from pathlib import Path
+# Standard libraries
+import os
 import time
-import pandas as pd
-from torch.utils.data import Dataset, DataLoader
-from concurrent.futures import ThreadPoolExecutor
-import cv2
-import torchvision.transforms as T
-import numpy as np
-from torchvision.transforms.functional import convert_image_dtype
-from torchvision.transforms import InterpolationMode
-from torch.nn.utils.rnn import pad_sequence
-from torchvision import transforms
 import logging
 import traceback
 import argparse
-import chardet
-import os
-
-
+from pathlib import Path
 from typing import List, Optional, Union, Mapping
+from concurrent.futures import ThreadPoolExecutor
 
+# Third-party libraries
+import torch
+import torchvision.transforms as T
+import numpy as np
+import pandas as pd
+import cv2
+from torch.utils.data import Dataset, DataLoader
+from torch.nn.utils.rnn import pad_sequence
+from transformers import (
+    AutoModelForCausalLM,
+    AutoProcessor,
+    GenerationConfig,
+    AutoTokenizer,
+)
 from transformers.image_utils import (
     OPENAI_CLIP_MEAN,
     OPENAI_CLIP_STD,
@@ -29,37 +29,48 @@ from transformers.image_utils import (
     is_valid_image,
 )
 
-# Set up logging
-logging.basicConfig(filename='/home/ltnghia02/vischronos/logs/script_execution1.log', level=logging.INFO,
+# For file encoding detection (if used later)
+import chardet
+
+
+def set_visible_gpus(gpu_ids):
+    os.environ['CUDA_VISIBLE_DEVICES'] = gpu_ids
+    os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
+    print(f"Using GPUs: {gpu_ids}")
+
+molmo_processor = None
+molmo_model = None
+
+def setup(): 
+    global molmo_processor, molmo_model
+
+    logging.basicConfig(filename='/home/ltnghia02/vischronos/logs/script_execution1.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
-os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
-os.environ['CUDA_VISIBLE_DEVICES'] = "3,4"
+    logging.info("Loading processor and model")
+    try:
+        custom_model_path = "/home/ltnghia02/models/molmo_model/models--allenai--Molmo-72B-0924/snapshots/2ca845922396b7a5f7086bfda3fca6b8ecd1c8f3"
+        molmo_processor = AutoProcessor.from_pretrained(
+            custom_model_path,
+            trust_remote_code=True,
+            torch_dtype=torch.float16,
+            device_map="auto"  # Chỉ định 4 GPU cho processor (nếu cần)
+        )
 
-# %%
-# Load data and initialize model/processor
-logging.info("Loading processor and model")
-try:
-    custom_model_path = "/home/ltnghia02/models/molmo_model/models--allenai--Molmo-72B-0924/snapshots/2ca845922396b7a5f7086bfda3fca6b8ecd1c8f3"
-    molmo_processor = AutoProcessor.from_pretrained(
-        custom_model_path,
-        trust_remote_code=True,
-        torch_dtype=torch.float16,
-        device_map="auto"  # Chỉ định 4 GPU cho processor (nếu cần)
-    )
+        # Load model với việc phân phối trên 4 GPU
+        molmo_model = AutoModelForCausalLM.from_pretrained(
+            custom_model_path,
+            trust_remote_code=True,
+            torch_dtype=torch.float16,
+            device_map="auto" # Chỉ định 4 GPU cho model
+        )
+    except Exception as e:
+        logging.error(f"Error loading processor or model: {str(e)}")
+        print(traceback.format_exc())
+        raise
+    log_success_files = open('/home/ltnghia02/vischronos/logs/success_files.txt', 'w')
 
-    # Load model với việc phân phối trên 4 GPU
-    molmo_model = AutoModelForCausalLM.from_pretrained(
-        custom_model_path,
-        trust_remote_code=True,
-        torch_dtype=torch.float16,
-        device_map="auto" # Chỉ định 4 GPU cho model
-    )
-except Exception as e:
-    logging.error(f"Error loading processor or model: {str(e)}")
-    print(traceback.format_exc())
-    raise
-log_success_files = open('/home/ltnghia02/vischronos/logs/success_files.txt', 'w')
+
 
 # %%
 # Custom Dataset
@@ -316,11 +327,15 @@ if __name__ == '__main__':
         parser.add_argument('--begin_index', type=int, help='The starting index of directories to process',default=None)
         parser.add_argument('--end_index', type=int, help='The ending index of directories to process', default=None)
         parser.add_argument('--img_index', type=int, help='Index of image in an article', default=None)
+        parser.add_argument('--gpu', type=str, default="0", help="Comma-separated list of GPU indices to be used (e.g., '0,1,2').")
         args = parser.parse_args()
 
         print(f"Index: b = {args.begin_index}, e = {args.end_index}, i = {args.img_index}")
         print("Preprocessing...")
         
+        set_visible_gpus(args.gpu)
+        setup()
+
         root_dir = args.dataset_path
         df = pd.read_csv(os.path.join(root_dir, "dataset.csv"))
         dataset = ImageTextDataset(root_dir, df, args.begin_index, args.end_index, args.img_index)
