@@ -240,6 +240,3 @@ if __name__ == "__main__":
 
     print("Processing dataset...")
     process_all_steps(args.dataset_path, args.prompt_path, args.img_index, args.begin_index, args.end_index)
-
-
-
