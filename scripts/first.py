@@ -36,10 +36,17 @@ import chardet
 def set_visible_gpus(gpu_ids):
     os.environ['CUDA_VISIBLE_DEVICES'] = gpu_ids
     os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
-    print(f"Using GPUs: {gpu_ids}")
+    print(f"Demand GPUs: {gpu_ids}")
+
+    if torch.cuda.is_available():
+        print(f"CUDA available, using GPU(s): {gpu_ids}")
+    else:
+        print("CUDA not available. Running on CPU.")
+
 
 molmo_processor = None
 molmo_model = None
+log_success_files_path = '/home/ltnghia02/vischronos/logs/success_files.txt'
 
 def setup(): 
     global molmo_processor, molmo_model
@@ -68,8 +75,6 @@ def setup():
         logging.error(f"Error loading processor or model: {str(e)}")
         print(traceback.format_exc())
         raise
-    log_success_files = open('/home/ltnghia02/vischronos/logs/success_files.txt', 'w')
-
 
 
 # %%
@@ -94,11 +99,11 @@ class ImageTextDataset(Dataset):
 
         self.target_size = (512, 512)
 
-        self.transform = transforms.Compose([
-            transforms.ToPILImage(),
-            transforms.Resize(self.target_size),
-            transforms.ToTensor(),  # Converts to tensor and scales [0, 1]
-            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])  # Example normalization
+        self.transform = T.Compose([
+            T.ToPILImage(),
+            T.Resize(self.target_size),
+            T.ToTensor(),  # Converts to tensor and scales [0, 1]
+            T.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])  # Example normalization
         ])
 
     def __len__(self):
@@ -121,10 +126,6 @@ class ImageTextDataset(Dataset):
             logging.error(f"Error in __getitem__ for index {idx}: {str(e)}")
             print(traceback.format_exc())
             raise
-
-    def __len__(self):
-        return len(self.samples)
-
 
 def collate_fn(batch):
     try:
@@ -202,7 +203,8 @@ def process_batch(
         images, short_captions, articles, img_paths = batch
         prompts_list = []
         print(img_paths)
-        log_success_files.write(f"Currently processing: {str(img_paths)}")
+        with open(log_success_files_path, 'a') as log_success_files:
+            log_success_files.write(f"Currently processing: {str(img_paths)}\n")
         template_prompt = read_prompt_from_file(args.prompt_path)
         prompts_list = get_prompt(step, short_captions, dense_captions, questions, articles, questions_and_answers,
                                   template_prompt)
