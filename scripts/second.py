@@ -19,7 +19,13 @@ tokenizer = None
 def set_visible_gpus(gpu_ids):
     os.environ['CUDA_VISIBLE_DEVICES'] = gpu_ids
     os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
-    print(f"Using GPUs: {gpu_ids}")
+    print(f"Using GPUs: {gpu_ids}")'
+        
+    if torch.cuda.is_available():
+        print(f"CUDA available, using GPU(s): {gpu_ids}")
+    else:
+        print("CUDA not available. Running on CPU.")
+
 
 def load_model(): 
     gemma_path = "/home/ltnghia02/models/gemma_model"
