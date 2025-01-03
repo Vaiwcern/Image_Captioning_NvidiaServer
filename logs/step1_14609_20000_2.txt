@@ -2995,3 +2995,453 @@ DONE
 STEP 1: CAPTIONING
 DONE
 ['/home/ltnghia02/dataset/19397/19397.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19407/19407.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19409/19409.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19419/19419.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19422/19422.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19426/19426.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19428/19428.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19429/19429.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19431/19431.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19437/19437.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19446/19446.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19451/19451.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19453/19453.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19476/19476.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19478/19478.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19480/19480.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19481/19481.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19487/19487.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19491/19491.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19494/19494.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19505/19505.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19508/19508.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19510/19510.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19512/19512.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19517/19517.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19520/19520.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19523/19523.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19539/19539.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19540/19540.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19547/19547.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19556/19556.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19564/19564.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19567/19567.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19569/19569.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19570/19570.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19574/19574.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19582/19582.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19584/19584.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19586/19586.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19590/19590.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19601/19601.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19604/19604.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19606/19606.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19611/19611.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19619/19619.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19622/19622.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19633/19633.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19634/19634.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19646/19646.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19649/19649.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19652/19652.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19654/19654.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19663/19663.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19667/19667.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19668/19668.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19674/19674.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19675/19675.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19676/19676.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19680/19680.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19681/19681.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19684/19684.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19685/19685.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19686/19686.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19689/19689.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19690/19690.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19694/19694.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19698/19698.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19702/19702.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19708/19708.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19712/19712.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19713/19713.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19714/19714.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19721/19721.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19723/19723.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19730/19730.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19731/19731.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19742/19742.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19743/19743.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19744/19744.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19756/19756.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19761/19761.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19762/19762.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19768/19768.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19769/19769.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19772/19772.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19774/19774.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19778/19778.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19785/19785.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19786/19786.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19787/19787.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19789/19789.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19790/19790.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19791/19791.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19796/19796.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19798/19798.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19805/19805.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19807/19807.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19808/19808.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19815/19815.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19816/19816.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19819/19819.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19820/19820.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19828/19828.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19833/19833.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19848/19848.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19859/19859.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19863/19863.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19864/19864.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19866/19866.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19867/19867.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19869/19869.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19874/19874.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19878/19878.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19880/19880.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19881/19881.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19882/19882.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19883/19883.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19885/19885.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19888/19888.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19889/19889.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19891/19891.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19895/19895.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19896/19896.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19898/19898.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19902/19902.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19904/19904.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19908/19908.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19914/19914.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19925/19925.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19930/19930.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19933/19933.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19945/19945.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19949/19949.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19950/19950.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19954/19954.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19955/19955.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19956/19956.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19958/19958.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19959/19959.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19962/19962.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19965/19965.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19970/19970.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19973/19973.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19976/19976.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19979/19979.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19980/19980.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19985/19985.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19988/19988.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19998/19998.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+['/home/ltnghia02/dataset/19999/19999.2/image.jpg']
+STEP 1: CAPTIONING
+DONE
+Total time taken: 96367.84880828857 seconds
