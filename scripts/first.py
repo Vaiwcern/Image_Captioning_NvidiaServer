@@ -130,8 +130,11 @@ class ImageTextDataset(Dataset):
 
 def collate_fn(batch):
     try:
+        # Remove None values from the batch
+        batch = [item for item in batch if item is not None]
+
+        # Now process the batch
         images = [item[0] for item in batch]
-        # print(images[0].shape) # = 1
         short_captions = [item[1] for item in batch]
         articles = [item[2] for item in batch]
         img_paths = [item[3] for item in batch]
