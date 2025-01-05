@@ -15,7 +15,7 @@
 ### Run step 1 by .sh file:
 
     ./scripts/first.sh <begin_index> <end_index> <image_index>`<GPU>`
-	./scripts/first.sh 4238 5000 1 12
+	./scripts/first.sh 4238 5000 1 1,2
 
 ### Run step 2 by .sh file:
 
@@ -39,5 +39,4 @@
 ## COPY FILE LOCAL and SERVER:
 
     scp <path_to_file> <auto_login_username>@ssh.axisapps.io:<path_to_des>
-
-scp <auto_login_username>@ssh.axisapps.io:<path_to_file> "<path_to des>"
+    scp <auto_login_username>@ssh.axisapps.io:<path_to_file> <path_to des>
