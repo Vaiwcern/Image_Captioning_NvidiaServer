@@ -259,8 +259,10 @@ def process_batch(
 
     except Exception as e:
         logging.error(f"Error in process_batch for step {step}: {str(e)}")
-        print(traceback.format_exc())
-        raise
+        # print(traceback.format_exc())
+        print(f"Skipping sample due to error: {e}")
+        return [], []  # Return empty lists to skip this sample
+
 
 
 # %%
@@ -309,7 +311,6 @@ def process_dataset(dataset):
 
     for batch in dataloader:
         try:
-
             dense_captions, img_paths = process_batch(batch, 1)
             write_results_batch(dense_captions, img_paths, 1)
         except Exception as e:
