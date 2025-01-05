@@ -259,7 +259,6 @@ def process_batch(
 
     except Exception as e:
         logging.error(f"Error in process_batch for step {step}: {str(e)}")
-        # print(traceback.format_exc())
         print(f"Skipping sample due to error: {e}")
         return [], []  # Return empty lists to skip this sample
 
@@ -292,8 +291,6 @@ def write_results(response, data_path, step):
     except Exception as e:
         logging.error(f"Error in write_results for step {step}, data_path {data_path}: {str(e)}")
         print(traceback.format_exc())
-        raise
-
 
 def write_results_batch(responses, data_paths, step):
     try:
@@ -301,9 +298,7 @@ def write_results_batch(responses, data_paths, step):
             write_results(response, data_path, step)
     except Exception as e:
         logging.error(f"Error in write_results_batch: {str(e)}")
-        print(traceback.format_exc())
-        raise
-
+        print(f"Skipping batch due to error: {e}")
 
 def process_dataset(dataset):
     num_workers = 4
@@ -312,7 +307,10 @@ def process_dataset(dataset):
     for batch in dataloader:
         try:
             dense_captions, img_paths = process_batch(batch, 1)
-            write_results_batch(dense_captions, img_paths, 1)
+            if dense_captions:  # Only write results if the batch processed successfully
+                write_results_batch(dense_captions, img_paths, 1)
+            else:
+                print(f"Skipping batch due to previous error.")
         except Exception as e:
             logging.error(f"Error processing batch: {str(e)}")
             print(traceback.format_exc())
