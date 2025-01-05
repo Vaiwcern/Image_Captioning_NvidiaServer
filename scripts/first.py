@@ -124,8 +124,9 @@ class ImageTextDataset(Dataset):
             return image_tensor, short_caption, article, str(img_path)
         except Exception as e:
             logging.error(f"Error in __getitem__ for index {idx}: {str(e)}")
-            print(traceback.format_exc())
-            raise
+            print(f"Skipping sample {idx} due to error.")
+            return None  # Return None to skip this sample
+
 
 def collate_fn(batch):
     try:
@@ -201,6 +202,11 @@ def process_batch(
 ):
     try:
         images, short_captions, articles, img_paths = batch
+
+        if None in images or None in short_captions or None in articles:
+            print("Skipping batch due to errors in sample data.")
+            return [], []
+
         prompts_list = []
         print(img_paths)
         with open(log_success_files_path, 'a') as log_success_files:
