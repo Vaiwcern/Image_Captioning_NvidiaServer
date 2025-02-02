@@ -24396,3 +24396,876 @@ Original Traceback (most recent call last):
 cv2.error: OpenCV(4.10.0) /io/opencv/modules/imgproc/src/color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
 
 
+2025-01-05 07:28:25,186 - INFO - Loading processor and model
+2025-01-05 07:29:38,863 - ERROR - Error in __getitem__ for index 1: OpenCV(4.10.0) /io/opencv/modules/imgproc/src/color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+2025-01-05 07:31:09,277 - ERROR - Error in main execution: Caught error in DataLoader worker process 1.
+Original Traceback (most recent call last):
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 351, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/ltnghia02/vischronos/scripts/first.py", line 121, in __getitem__
+    image = cv2.cvtColor(cv2.imread(str(img_path)), cv2.COLOR_BGR2RGB)
+cv2.error: OpenCV(4.10.0) /io/opencv/modules/imgproc/src/color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+
+2025-01-05 07:34:11,212 - INFO - Loading processor and model
+2025-01-05 07:35:24,933 - ERROR - Error in __getitem__ for index 1: OpenCV(4.10.0) /io/opencv/modules/imgproc/src/color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+2025-01-05 07:35:24,934 - ERROR - Error in collate_fn: 'NoneType' object is not subscriptable
+2025-01-05 07:36:55,785 - ERROR - Error in main execution: Caught TypeError in DataLoader worker process 1.
+Original Traceback (most recent call last):
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 351, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+  File "/home/ltnghia02/vischronos/scripts/first.py", line 133, in collate_fn
+    images = [item[0] for item in batch]
+  File "/home/ltnghia02/vischronos/scripts/first.py", line 133, in <listcomp>
+    images = [item[0] for item in batch]
+TypeError: 'NoneType' object is not subscriptable
+
+2025-01-05 07:38:39,398 - INFO - Loading processor and model
+2025-01-05 07:39:54,347 - ERROR - Error in __getitem__ for index 1: OpenCV(4.10.0) /io/opencv/modules/imgproc/src/color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+2025-01-05 07:41:25,190 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 01:54:32,575 - ERROR - Error in __getitem__ for index 821: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33552/33552.1/short.txt'
+2025-01-06 01:56:04,456 - ERROR - Error in __getitem__ for index 822: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33553/33553.1/short.txt'
+2025-01-06 01:57:20,679 - ERROR - Error in __getitem__ for index 823: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33554/33554.1/short.txt'
+2025-01-06 01:58:51,269 - ERROR - Error in __getitem__ for index 824: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33555/33555.1/short.txt'
+2025-01-06 01:59:57,755 - ERROR - Error in __getitem__ for index 825: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33556/33556.1/short.txt'
+2025-01-06 02:01:07,676 - ERROR - Error in __getitem__ for index 826: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33557/33557.1/short.txt'
+2025-01-06 02:02:27,430 - ERROR - Error in __getitem__ for index 827: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33558/33558.1/short.txt'
+2025-01-06 02:03:37,076 - ERROR - Error in __getitem__ for index 828: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33559/33559.1/short.txt'
+2025-01-06 02:05:01,522 - ERROR - Error in __getitem__ for index 829: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33560/33560.1/short.txt'
+2025-01-06 02:05:01,531 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,532 - ERROR - Error in __getitem__ for index 830: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33561/33561.1/short.txt'
+2025-01-06 02:05:01,541 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,542 - ERROR - Error in __getitem__ for index 831: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33562/33562.1/short.txt'
+2025-01-06 02:05:01,551 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,551 - ERROR - Error in __getitem__ for index 832: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33563/33563.1/short.txt'
+2025-01-06 02:05:01,560 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,561 - ERROR - Error in __getitem__ for index 833: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33564/33564.1/short.txt'
+2025-01-06 02:05:01,570 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,570 - ERROR - Error in __getitem__ for index 834: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33565/33565.1/short.txt'
+2025-01-06 02:05:01,579 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,579 - ERROR - Error in __getitem__ for index 835: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33566/33566.1/short.txt'
+2025-01-06 02:05:01,588 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,589 - ERROR - Error in __getitem__ for index 836: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33567/33567.1/short.txt'
+2025-01-06 02:05:01,598 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,598 - ERROR - Error in __getitem__ for index 837: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33568/33568.1/short.txt'
+2025-01-06 02:05:01,607 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,607 - ERROR - Error in __getitem__ for index 838: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33569/33569.1/short.txt'
+2025-01-06 02:05:01,616 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,617 - ERROR - Error in __getitem__ for index 839: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33570/33570.1/short.txt'
+2025-01-06 02:05:01,626 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,626 - ERROR - Error in __getitem__ for index 840: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33572/33572.1/short.txt'
+2025-01-06 02:05:01,635 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,635 - ERROR - Error in __getitem__ for index 841: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33573/33573.1/short.txt'
+2025-01-06 02:05:01,644 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,645 - ERROR - Error in __getitem__ for index 842: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33574/33574.1/short.txt'
+2025-01-06 02:05:01,654 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,654 - ERROR - Error in __getitem__ for index 843: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33575/33575.1/short.txt'
+2025-01-06 02:05:01,663 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,663 - ERROR - Error in __getitem__ for index 844: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33576/33576.1/short.txt'
+2025-01-06 02:05:01,672 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,673 - ERROR - Error in __getitem__ for index 845: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33577/33577.1/short.txt'
+2025-01-06 02:05:01,682 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,682 - ERROR - Error in __getitem__ for index 846: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33578/33578.1/short.txt'
+2025-01-06 02:05:01,691 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,692 - ERROR - Error in __getitem__ for index 847: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33579/33579.1/short.txt'
+2025-01-06 02:05:01,700 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,701 - ERROR - Error in __getitem__ for index 848: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33582/33582.1/short.txt'
+2025-01-06 02:05:01,710 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,710 - ERROR - Error in __getitem__ for index 849: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33583/33583.1/short.txt'
+2025-01-06 02:05:01,719 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,720 - ERROR - Error in __getitem__ for index 850: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33584/33584.1/short.txt'
+2025-01-06 02:05:01,728 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,729 - ERROR - Error in __getitem__ for index 851: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33587/33587.1/short.txt'
+2025-01-06 02:05:01,738 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,738 - ERROR - Error in __getitem__ for index 852: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33588/33588.1/short.txt'
+2025-01-06 02:05:01,747 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,748 - ERROR - Error in __getitem__ for index 853: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33589/33589.1/short.txt'
+2025-01-06 02:05:01,756 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,757 - ERROR - Error in __getitem__ for index 854: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33591/33591.1/short.txt'
+2025-01-06 02:05:01,766 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,766 - ERROR - Error in __getitem__ for index 855: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33592/33592.1/short.txt'
+2025-01-06 02:05:01,775 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,784 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,793 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,802 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,812 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,821 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,830 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,840 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-06 02:05:01,850 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:27:50,608 - ERROR - Error in __getitem__ for index 3828: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37333/37333.1/short.txt'
+2025-01-08 21:29:06,197 - ERROR - Error in __getitem__ for index 3829: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37334/37334.1/short.txt'
+2025-01-08 21:30:38,202 - ERROR - Error in __getitem__ for index 3830: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37335/37335.1/short.txt'
+2025-01-08 21:32:15,676 - ERROR - Error in __getitem__ for index 3831: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37337/37337.1/short.txt'
+2025-01-08 21:33:27,244 - ERROR - Error in __getitem__ for index 3832: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37338/37338.1/short.txt'
+2025-01-08 21:34:50,702 - ERROR - Error in __getitem__ for index 3833: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37339/37339.1/short.txt'
+2025-01-08 21:36:28,094 - ERROR - Error in __getitem__ for index 3834: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37340/37340.1/short.txt'
+2025-01-08 21:38:10,272 - ERROR - Error in __getitem__ for index 3835: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37341/37341.1/short.txt'
+2025-01-08 21:39:23,160 - ERROR - Error in __getitem__ for index 3836: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37342/37342.1/short.txt'
+2025-01-08 21:39:23,170 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,171 - ERROR - Error in __getitem__ for index 3837: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37343/37343.1/short.txt'
+2025-01-08 21:39:23,179 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,180 - ERROR - Error in __getitem__ for index 3838: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37344/37344.1/short.txt'
+2025-01-08 21:39:23,189 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,190 - ERROR - Error in __getitem__ for index 3839: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37345/37345.1/short.txt'
+2025-01-08 21:39:23,198 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,199 - ERROR - Error in __getitem__ for index 3840: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37346/37346.1/short.txt'
+2025-01-08 21:39:23,208 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,208 - ERROR - Error in __getitem__ for index 3841: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37347/37347.1/short.txt'
+2025-01-08 21:39:23,217 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,218 - ERROR - Error in __getitem__ for index 3842: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37348/37348.1/short.txt'
+2025-01-08 21:39:23,226 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,227 - ERROR - Error in __getitem__ for index 3843: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37349/37349.1/short.txt'
+2025-01-08 21:39:23,235 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,236 - ERROR - Error in __getitem__ for index 3844: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37352/37352.1/short.txt'
+2025-01-08 21:39:23,245 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,245 - ERROR - Error in __getitem__ for index 3845: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37353/37353.1/short.txt'
+2025-01-08 21:39:23,254 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,255 - ERROR - Error in __getitem__ for index 3846: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37354/37354.1/short.txt'
+2025-01-08 21:39:23,263 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,264 - ERROR - Error in __getitem__ for index 3847: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37357/37357.1/short.txt'
+2025-01-08 21:39:23,272 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,273 - ERROR - Error in __getitem__ for index 3848: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37358/37358.1/short.txt'
+2025-01-08 21:39:23,282 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,282 - ERROR - Error in __getitem__ for index 3849: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37359/37359.1/short.txt'
+2025-01-08 21:39:23,291 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,292 - ERROR - Error in __getitem__ for index 3850: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37361/37361.1/short.txt'
+2025-01-08 21:39:23,300 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,301 - ERROR - Error in __getitem__ for index 3851: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37362/37362.1/short.txt'
+2025-01-08 21:39:23,309 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,310 - ERROR - Error in __getitem__ for index 3852: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37363/37363.1/short.txt'
+2025-01-08 21:39:23,319 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,319 - ERROR - Error in __getitem__ for index 3853: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37364/37364.1/short.txt'
+2025-01-08 21:39:23,328 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,337 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,338 - ERROR - Error in __getitem__ for index 3855: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37366/37366.1/short.txt'
+2025-01-08 21:39:23,347 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,347 - ERROR - Error in __getitem__ for index 3856: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37367/37367.1/short.txt'
+2025-01-08 21:39:23,356 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,356 - ERROR - Error in __getitem__ for index 3857: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37369/37369.1/short.txt'
+2025-01-08 21:39:23,365 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,374 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,375 - ERROR - Error in __getitem__ for index 3859: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37372/37372.1/short.txt'
+2025-01-08 21:39:23,378 - ERROR - Error in __getitem__ for index 3858: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37370/37370.1/short.txt'
+2025-01-08 21:39:23,383 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,384 - ERROR - Error in __getitem__ for index 3860: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37373/37373.1/short.txt'
+2025-01-08 21:39:23,394 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,394 - ERROR - Error in __getitem__ for index 3861: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37375/37375.1/short.txt'
+2025-01-08 21:39:23,404 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:39:23,408 - ERROR - Error in __getitem__ for index 3862: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37376/37376.1/short.txt'
+2025-01-08 21:40:46,602 - ERROR - Error in __getitem__ for index 3863: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37377/37377.1/short.txt'
+2025-01-08 21:40:46,611 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:40:46,621 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:40:46,621 - ERROR - Error in __getitem__ for index 3865: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37379/37379.1/short.txt'
+2025-01-08 21:40:46,630 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:40:46,631 - ERROR - Error in __getitem__ for index 3866: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37380/37380.1/short.txt'
+2025-01-08 21:40:46,639 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:40:46,640 - ERROR - Error in __getitem__ for index 3867: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37387/37387.1/short.txt'
+2025-01-08 21:40:46,649 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:40:46,658 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:40:46,658 - ERROR - Error in __getitem__ for index 3869: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37389/37389.1/short.txt'
+2025-01-08 21:40:46,667 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:40:46,668 - ERROR - Error in __getitem__ for index 3870: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37390/37390.1/short.txt'
+2025-01-08 21:40:46,676 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:40:46,677 - ERROR - Error in __getitem__ for index 3871: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37393/37393.1/short.txt'
+2025-01-08 21:40:46,686 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:40:46,745 - ERROR - Error in __getitem__ for index 3868: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37388/37388.1/short.txt'
+2025-01-08 21:40:46,757 - ERROR - Error in __getitem__ for index 3872: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37394/37394.1/short.txt'
+2025-01-08 21:42:07,715 - ERROR - Error in __getitem__ for index 3873: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37395/37395.1/short.txt'
+2025-01-08 21:42:07,725 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:42:07,726 - ERROR - Error in __getitem__ for index 3874: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37398/37398.1/short.txt'
+2025-01-08 21:42:07,734 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:42:07,735 - ERROR - Error in __getitem__ for index 3875: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37399/37399.1/short.txt'
+2025-01-08 21:42:07,744 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:42:07,745 - ERROR - Error in __getitem__ for index 3876: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37400/37400.1/short.txt'
+2025-01-08 21:42:07,753 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:42:07,754 - ERROR - Error in __getitem__ for index 3877: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37401/37401.1/short.txt'
+2025-01-08 21:42:07,763 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:42:07,763 - ERROR - Error in __getitem__ for index 3878: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37402/37402.1/short.txt'
+2025-01-08 21:42:07,772 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:42:07,773 - ERROR - Error in __getitem__ for index 3879: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37403/37403.1/short.txt'
+2025-01-08 21:42:07,781 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:42:07,781 - ERROR - Error in __getitem__ for index 3880: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37405/37405.1/short.txt'
+2025-01-08 21:42:07,790 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:42:07,791 - ERROR - Error in __getitem__ for index 3881: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37406/37406.1/short.txt'
+2025-01-08 21:42:07,800 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:42:07,800 - ERROR - Error in __getitem__ for index 3882: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37408/37408.1/short.txt'
+2025-01-08 21:42:07,809 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:42:07,809 - ERROR - Error in __getitem__ for index 3883: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37409/37409.1/short.txt'
+2025-01-08 21:42:07,818 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:42:07,827 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:42:07,836 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:42:07,845 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:42:07,854 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:42:07,863 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:42:07,872 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:42:07,881 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-08 21:42:07,891 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 09:11:15,704 - ERROR - Error in write_results for step 1, data_path /home/ltnghia02/dataset/39458/39458.1/image.jpg: [Errno 28] No space left on device
+2025-01-10 09:12:39,608 - ERROR - Error in write_results for step 1, data_path /home/ltnghia02/dataset/39460/39460.1/image.jpg: [Errno 28] No space left on device
+2025-01-10 09:14:17,198 - ERROR - Error in write_results for step 1, data_path /home/ltnghia02/dataset/39461/39461.1/image.jpg: [Errno 28] No space left on device
+2025-01-10 09:15:44,897 - ERROR - Error in write_results for step 1, data_path /home/ltnghia02/dataset/39464/39464.1/image.jpg: [Errno 28] No space left on device
+2025-01-10 09:17:04,185 - ERROR - Error in write_results for step 1, data_path /home/ltnghia02/datase2025-01-10 12:43:49,838 - INFO - Loading processor and model
+2025-01-10 22:45:46,076 - ERROR - Error in __getitem__ for index 447: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40041/40041.1/short.txt'
+2025-01-10 22:47:05,603 - ERROR - Error in __getitem__ for index 448: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40042/40042.1/short.txt'
+2025-01-10 22:48:17,517 - ERROR - Error in __getitem__ for index 449: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40043/40043.1/short.txt'
+2025-01-10 22:49:51,881 - ERROR - Error in __getitem__ for index 450: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40044/40044.1/short.txt'
+2025-01-10 22:51:22,358 - ERROR - Error in __getitem__ for index 451: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40045/40045.1/short.txt'
+2025-01-10 22:52:45,653 - ERROR - Error in __getitem__ for index 452: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40046/40046.1/short.txt'
+2025-01-10 22:54:20,316 - ERROR - Error in __getitem__ for index 453: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40047/40047.1/short.txt'
+2025-01-10 22:55:51,356 - ERROR - Error in __getitem__ for index 454: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40048/40048.1/short.txt'
+2025-01-10 22:57:38,138 - ERROR - Error in __getitem__ for index 455: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40049/40049.1/short.txt'
+2025-01-10 22:57:38,148 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,149 - ERROR - Error in __getitem__ for index 456: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40050/40050.1/short.txt'
+2025-01-10 22:57:38,158 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,159 - ERROR - Error in __getitem__ for index 457: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40052/40052.1/short.txt'
+2025-01-10 22:57:38,168 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,169 - ERROR - Error in __getitem__ for index 458: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40053/40053.1/short.txt'
+2025-01-10 22:57:38,178 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,178 - ERROR - Error in __getitem__ for index 459: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40054/40054.1/short.txt'
+2025-01-10 22:57:38,187 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,188 - ERROR - Error in __getitem__ for index 460: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40056/40056.1/short.txt'
+2025-01-10 22:57:38,197 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,198 - ERROR - Error in __getitem__ for index 461: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40058/40058.1/short.txt'
+2025-01-10 22:57:38,206 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,207 - ERROR - Error in __getitem__ for index 462: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40059/40059.1/short.txt'
+2025-01-10 22:57:38,216 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,217 - ERROR - Error in __getitem__ for index 463: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40060/40060.1/short.txt'
+2025-01-10 22:57:38,225 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,226 - ERROR - Error in __getitem__ for index 464: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40061/40061.1/short.txt'
+2025-01-10 22:57:38,235 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,235 - ERROR - Error in __getitem__ for index 465: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40062/40062.1/short.txt'
+2025-01-10 22:57:38,244 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,245 - ERROR - Error in __getitem__ for index 466: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40063/40063.1/short.txt'
+2025-01-10 22:57:38,254 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,254 - ERROR - Error in __getitem__ for index 467: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40065/40065.1/short.txt'
+2025-01-10 22:57:38,263 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,263 - ERROR - Error in __getitem__ for index 468: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40066/40066.1/short.txt'
+2025-01-10 22:57:38,272 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,273 - ERROR - Error in __getitem__ for index 469: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40067/40067.1/short.txt'
+2025-01-10 22:57:38,282 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,282 - ERROR - Error in __getitem__ for index 470: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40069/40069.1/short.txt'
+2025-01-10 22:57:38,291 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,292 - ERROR - Error in __getitem__ for index 471: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40070/40070.1/short.txt'
+2025-01-10 22:57:38,301 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,301 - ERROR - Error in __getitem__ for index 472: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40071/40071.1/short.txt'
+2025-01-10 22:57:38,310 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,310 - ERROR - Error in __getitem__ for index 473: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40072/40072.1/short.txt'
+2025-01-10 22:57:38,319 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,320 - ERROR - Error in __getitem__ for index 474: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40073/40073.1/short.txt'
+2025-01-10 22:57:38,329 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,329 - ERROR - Error in __getitem__ for index 475: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40074/40074.1/short.txt'
+2025-01-10 22:57:38,338 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,339 - ERROR - Error in __getitem__ for index 476: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40075/40075.1/short.txt'
+2025-01-10 22:57:38,347 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,348 - ERROR - Error in __getitem__ for index 477: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40076/40076.1/short.txt'
+2025-01-10 22:57:38,357 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,357 - ERROR - Error in __getitem__ for index 478: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40078/40078.1/short.txt'
+2025-01-10 22:57:38,366 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,367 - ERROR - Error in __getitem__ for index 479: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40080/40080.1/short.txt'
+2025-01-10 22:57:38,376 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,376 - ERROR - Error in __getitem__ for index 480: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40081/40081.1/short.txt'
+2025-01-10 22:57:38,385 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,386 - ERROR - Error in __getitem__ for index 481: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40083/40083.1/short.txt'
+2025-01-10 22:57:38,394 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,395 - ERROR - Error in __getitem__ for index 482: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40084/40084.1/short.txt'
+2025-01-10 22:57:38,404 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,404 - ERROR - Error in __getitem__ for index 483: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40085/40085.1/short.txt'
+2025-01-10 22:57:38,413 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,414 - ERROR - Error in __getitem__ for index 484: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40087/40087.1/short.txt'
+2025-01-10 22:57:38,423 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,423 - ERROR - Error in __getitem__ for index 485: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40088/40088.1/short.txt'
+2025-01-10 22:57:38,432 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,433 - ERROR - Error in __getitem__ for index 486: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40089/40089.1/short.txt'
+2025-01-10 22:57:38,442 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,442 - ERROR - Error in __getitem__ for index 487: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40090/40090.1/short.txt'
+2025-01-10 22:57:38,451 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,451 - ERROR - Error in __getitem__ for index 488: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40091/40091.1/short.txt'
+2025-01-10 22:57:38,460 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,461 - ERROR - Error in __getitem__ for index 489: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40092/40092.1/short.txt'
+2025-01-10 22:57:38,470 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,470 - ERROR - Error in __getitem__ for index 490: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40093/40093.1/short.txt'
+2025-01-10 22:57:38,479 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,479 - ERROR - Error in __getitem__ for index 491: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40094/40094.1/short.txt'
+2025-01-10 22:57:38,488 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,489 - ERROR - Error in __getitem__ for index 492: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40095/40095.1/short.txt'
+2025-01-10 22:57:38,498 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,498 - ERROR - Error in __getitem__ for index 493: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40096/40096.1/short.txt'
+2025-01-10 22:57:38,507 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,508 - ERROR - Error in __getitem__ for index 494: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40098/40098.1/short.txt'
+2025-01-10 22:57:38,516 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,517 - ERROR - Error in __getitem__ for index 495: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40099/40099.1/short.txt'
+2025-01-10 22:57:38,526 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,526 - ERROR - Error in __getitem__ for index 496: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40100/40100.1/short.txt'
+2025-01-10 22:57:38,536 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,537 - ERROR - Error in __getitem__ for index 497: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40101/40101.1/short.txt'
+2025-01-10 22:57:38,546 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,546 - ERROR - Error in __getitem__ for index 498: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40102/40102.1/short.txt'
+2025-01-10 22:57:38,555 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,556 - ERROR - Error in __getitem__ for index 499: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40103/40103.1/short.txt'
+2025-01-10 22:57:38,565 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,565 - ERROR - Error in __getitem__ for index 500: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40104/40104.1/short.txt'
+2025-01-10 22:57:38,575 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,576 - ERROR - Error in __getitem__ for index 501: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40105/40105.1/short.txt'
+2025-01-10 22:57:38,585 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,585 - ERROR - Error in __getitem__ for index 502: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40106/40106.1/short.txt'
+2025-01-10 22:57:38,594 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,595 - ERROR - Error in __getitem__ for index 503: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40107/40107.1/short.txt'
+2025-01-10 22:57:38,604 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,604 - ERROR - Error in __getitem__ for index 504: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40108/40108.1/short.txt'
+2025-01-10 22:57:38,613 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,613 - ERROR - Error in __getitem__ for index 505: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40109/40109.1/short.txt'
+2025-01-10 22:57:38,622 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,623 - ERROR - Error in __getitem__ for index 506: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40110/40110.1/short.txt'
+2025-01-10 22:57:38,632 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,632 - ERROR - Error in __getitem__ for index 507: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40112/40112.1/short.txt'
+2025-01-10 22:57:38,641 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,641 - ERROR - Error in __getitem__ for index 508: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40114/40114.1/short.txt'
+2025-01-10 22:57:38,650 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,651 - ERROR - Error in __getitem__ for index 509: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40115/40115.1/short.txt'
+2025-01-10 22:57:38,660 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,660 - ERROR - Error in __getitem__ for index 510: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40116/40116.1/short.txt'
+2025-01-10 22:57:38,669 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,670 - ERROR - Error in __getitem__ for index 511: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40117/40117.1/short.txt'
+2025-01-10 22:57:38,678 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,679 - ERROR - Error in __getitem__ for index 512: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40118/40118.1/short.txt'
+2025-01-10 22:57:38,688 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,688 - ERROR - Error in __getitem__ for index 513: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40119/40119.1/short.txt'
+2025-01-10 22:57:38,697 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,698 - ERROR - Error in __getitem__ for index 514: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40120/40120.1/short.txt'
+2025-01-10 22:57:38,707 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,716 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,725 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,735 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,744 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,754 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,764 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,780 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-10 22:57:38,794 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 04:30:20,428 - INFO - Loading processor and model
+2025-01-13 15:41:01,305 - ERROR - Error in __getitem__ for index 495: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30981/30981.2/short.txt'
+2025-01-13 15:42:30,596 - ERROR - Error in __getitem__ for index 496: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30984/30984.2/short.txt'
+2025-01-13 15:43:54,339 - ERROR - Error in __getitem__ for index 497: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30985/30985.2/short.txt'
+2025-01-13 15:45:12,889 - ERROR - Error in __getitem__ for index 498: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30986/30986.2/short.txt'
+2025-01-13 15:46:21,366 - ERROR - Error in __getitem__ for index 499: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30987/30987.2/short.txt'
+2025-01-13 15:47:30,670 - ERROR - Error in __getitem__ for index 500: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30988/30988.2/short.txt'
+2025-01-13 15:48:49,108 - ERROR - Error in __getitem__ for index 501: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30990/30990.2/short.txt'
+2025-01-13 15:50:18,747 - ERROR - Error in __getitem__ for index 502: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30991/30991.2/short.txt'
+2025-01-13 15:51:45,301 - ERROR - Error in __getitem__ for index 503: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30992/30992.2/short.txt'
+2025-01-13 15:51:45,311 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,312 - ERROR - Error in __getitem__ for index 504: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30993/30993.2/short.txt'
+2025-01-13 15:51:45,321 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,321 - ERROR - Error in __getitem__ for index 505: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30994/30994.2/short.txt'
+2025-01-13 15:51:45,330 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,331 - ERROR - Error in __getitem__ for index 506: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30995/30995.2/short.txt'
+2025-01-13 15:51:45,340 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,341 - ERROR - Error in __getitem__ for index 507: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30996/30996.2/short.txt'
+2025-01-13 15:51:45,350 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,350 - ERROR - Error in __getitem__ for index 508: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30997/30997.2/short.txt'
+2025-01-13 15:51:45,359 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,359 - ERROR - Error in __getitem__ for index 509: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30998/30998.2/short.txt'
+2025-01-13 15:51:45,369 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,369 - ERROR - Error in __getitem__ for index 510: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31000/31000.2/short.txt'
+2025-01-13 15:51:45,378 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,379 - ERROR - Error in __getitem__ for index 511: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31001/31001.2/short.txt'
+2025-01-13 15:51:45,388 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,388 - ERROR - Error in __getitem__ for index 512: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31002/31002.2/short.txt'
+2025-01-13 15:51:45,397 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,398 - ERROR - Error in __getitem__ for index 513: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31003/31003.2/short.txt'
+2025-01-13 15:51:45,407 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,407 - ERROR - Error in __getitem__ for index 514: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31004/31004.2/short.txt'
+2025-01-13 15:51:45,416 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,417 - ERROR - Error in __getitem__ for index 515: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31005/31005.2/short.txt'
+2025-01-13 15:51:45,426 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,426 - ERROR - Error in __getitem__ for index 516: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31006/31006.2/short.txt'
+2025-01-13 15:51:45,435 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,436 - ERROR - Error in __getitem__ for index 517: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31007/31007.2/short.txt'
+2025-01-13 15:51:45,445 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,446 - ERROR - Error in __getitem__ for index 518: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31008/31008.2/short.txt'
+2025-01-13 15:51:45,455 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,455 - ERROR - Error in __getitem__ for index 519: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31009/31009.2/short.txt'
+2025-01-13 15:51:45,464 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,465 - ERROR - Error in __getitem__ for index 520: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31012/31012.2/short.txt'
+2025-01-13 15:51:45,474 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,483 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,492 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,501 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,511 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,520 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,529 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,539 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-13 15:51:45,548 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-14 08:45:37,062 - ERROR - Error in __getitem__ for index 1257: OpenCV(4.10.0) /io/opencv/modules/imgproc/src/color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+2025-01-14 08:57:23,027 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:23:43,580 - ERROR - Error in __getitem__ for index 2026: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33552/33552.2/short.txt'
+2025-01-15 02:25:14,007 - ERROR - Error in __getitem__ for index 2027: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33553/33553.2/short.txt'
+2025-01-15 02:26:20,599 - ERROR - Error in __getitem__ for index 2028: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33554/33554.2/short.txt'
+2025-01-15 02:27:41,003 - ERROR - Error in __getitem__ for index 2029: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33555/33555.2/short.txt'
+2025-01-15 02:29:00,778 - ERROR - Error in __getitem__ for index 2030: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33556/33556.2/short.txt'
+2025-01-15 02:30:35,772 - ERROR - Error in __getitem__ for index 2031: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33557/33557.2/short.txt'
+2025-01-15 02:32:26,005 - ERROR - Error in __getitem__ for index 2032: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33558/33558.2/short.txt'
+2025-01-15 02:33:36,718 - ERROR - Error in __getitem__ for index 2033: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33559/33559.2/short.txt'
+2025-01-15 02:35:00,687 - ERROR - Error in __getitem__ for index 2034: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33560/33560.2/short.txt'
+2025-01-15 02:35:00,696 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,697 - ERROR - Error in __getitem__ for index 2035: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33561/33561.2/short.txt'
+2025-01-15 02:35:00,705 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,706 - ERROR - Error in __getitem__ for index 2036: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33562/33562.2/short.txt'
+2025-01-15 02:35:00,715 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,715 - ERROR - Error in __getitem__ for index 2037: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33563/33563.2/short.txt'
+2025-01-15 02:35:00,724 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,724 - ERROR - Error in __getitem__ for index 2038: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33564/33564.2/short.txt'
+2025-01-15 02:35:00,733 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,734 - ERROR - Error in __getitem__ for index 2039: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33566/33566.2/short.txt'
+2025-01-15 02:35:00,742 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,743 - ERROR - Error in __getitem__ for index 2040: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33567/33567.2/short.txt'
+2025-01-15 02:35:00,751 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,752 - ERROR - Error in __getitem__ for index 2041: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33568/33568.2/short.txt'
+2025-01-15 02:35:00,761 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,761 - ERROR - Error in __getitem__ for index 2042: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33570/33570.2/short.txt'
+2025-01-15 02:35:00,770 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,770 - ERROR - Error in __getitem__ for index 2043: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33573/33573.2/short.txt'
+2025-01-15 02:35:00,779 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,780 - ERROR - Error in __getitem__ for index 2044: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33574/33574.2/short.txt'
+2025-01-15 02:35:00,788 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,789 - ERROR - Error in __getitem__ for index 2045: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33575/33575.2/short.txt'
+2025-01-15 02:35:00,798 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,798 - ERROR - Error in __getitem__ for index 2046: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33576/33576.2/short.txt'
+2025-01-15 02:35:00,807 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,807 - ERROR - Error in __getitem__ for index 2047: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33577/33577.2/short.txt'
+2025-01-15 02:35:00,816 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,816 - ERROR - Error in __getitem__ for index 2048: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33579/33579.2/short.txt'
+2025-01-15 02:35:00,825 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,826 - ERROR - Error in __getitem__ for index 2049: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33582/33582.2/short.txt'
+2025-01-15 02:35:00,834 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,835 - ERROR - Error in __getitem__ for index 2050: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33584/33584.2/short.txt'
+2025-01-15 02:35:00,843 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,844 - ERROR - Error in __getitem__ for index 2051: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33587/33587.2/short.txt'
+2025-01-15 02:35:00,853 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,853 - ERROR - Error in __getitem__ for index 2052: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33588/33588.2/short.txt'
+2025-01-15 02:35:00,862 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,862 - ERROR - Error in __getitem__ for index 2053: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33589/33589.2/short.txt'
+2025-01-15 02:35:00,871 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,871 - ERROR - Error in __getitem__ for index 2054: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33591/33591.2/short.txt'
+2025-01-15 02:35:00,880 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,881 - ERROR - Error in __getitem__ for index 2055: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33592/33592.2/short.txt'
+2025-01-15 02:35:00,889 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,898 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,907 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,916 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,925 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,934 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,943 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,952 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-15 02:35:00,961 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:15:12,594 - ERROR - Error in __getitem__ for index 3837: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37334/37334.2/short.txt'
+2025-01-16 19:16:33,889 - ERROR - Error in __getitem__ for index 3838: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37337/37337.2/short.txt'
+2025-01-16 19:18:10,431 - ERROR - Error in __getitem__ for index 3839: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37340/37340.2/short.txt'
+2025-01-16 19:19:19,160 - ERROR - Error in __getitem__ for index 3840: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37344/37344.2/short.txt'
+2025-01-16 19:20:46,465 - ERROR - Error in __getitem__ for index 3841: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37346/37346.2/short.txt'
+2025-01-16 19:21:59,057 - ERROR - Error in __getitem__ for index 3842: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37347/37347.2/short.txt'
+2025-01-16 19:23:17,049 - ERROR - Error in __getitem__ for index 3843: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37348/37348.2/short.txt'
+2025-01-16 19:24:18,460 - ERROR - Error in __getitem__ for index 3844: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37349/37349.2/short.txt'
+2025-01-16 19:25:25,069 - ERROR - Error in __getitem__ for index 3845: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37352/37352.2/short.txt'
+2025-01-16 19:25:25,079 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,080 - ERROR - Error in __getitem__ for index 3846: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37358/37358.2/short.txt'
+2025-01-16 19:25:25,088 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,089 - ERROR - Error in __getitem__ for index 3847: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37359/37359.2/short.txt'
+2025-01-16 19:25:25,097 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,098 - ERROR - Error in __getitem__ for index 3848: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37361/37361.2/short.txt'
+2025-01-16 19:25:25,107 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,107 - ERROR - Error in __getitem__ for index 3849: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37363/37363.2/short.txt'
+2025-01-16 19:25:25,116 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,116 - ERROR - Error in __getitem__ for index 3850: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37364/37364.2/short.txt'
+2025-01-16 19:25:25,125 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,125 - ERROR - Error in __getitem__ for index 3851: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37366/37366.2/short.txt'
+2025-01-16 19:25:25,134 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,135 - ERROR - Error in __getitem__ for index 3852: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37370/37370.2/short.txt'
+2025-01-16 19:25:25,143 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,144 - ERROR - Error in __getitem__ for index 3853: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37372/37372.2/short.txt'
+2025-01-16 19:25:25,152 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,153 - ERROR - Error in __getitem__ for index 3854: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37373/37373.2/short.txt'
+2025-01-16 19:25:25,162 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,162 - ERROR - Error in __getitem__ for index 3855: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37375/37375.2/short.txt'
+2025-01-16 19:25:25,171 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,171 - ERROR - Error in __getitem__ for index 3856: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37377/37377.2/short.txt'
+2025-01-16 19:25:25,180 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,180 - ERROR - Error in __getitem__ for index 3857: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37379/37379.2/short.txt'
+2025-01-16 19:25:25,189 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,190 - ERROR - Error in __getitem__ for index 3858: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37387/37387.2/short.txt'
+2025-01-16 19:25:25,199 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,199 - ERROR - Error in __getitem__ for index 3859: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37388/37388.2/short.txt'
+2025-01-16 19:25:25,208 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,208 - ERROR - Error in __getitem__ for index 3860: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37389/37389.2/short.txt'
+2025-01-16 19:25:25,217 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,218 - ERROR - Error in __getitem__ for index 3861: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37393/37393.2/short.txt'
+2025-01-16 19:25:25,226 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,227 - ERROR - Error in __getitem__ for index 3862: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37394/37394.2/short.txt'
+2025-01-16 19:25:25,236 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,236 - ERROR - Error in __getitem__ for index 3863: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37398/37398.2/short.txt'
+2025-01-16 19:25:25,245 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,245 - ERROR - Error in __getitem__ for index 3864: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37401/37401.2/short.txt'
+2025-01-16 19:25:25,254 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,254 - ERROR - Error in __getitem__ for index 3865: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37402/37402.2/short.txt'
+2025-01-16 19:25:25,263 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,263 - ERROR - Error in __getitem__ for index 3866: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37405/37405.2/short.txt'
+2025-01-16 19:25:25,272 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,273 - ERROR - Error in __getitem__ for index 3867: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37406/37406.2/short.txt'
+2025-01-16 19:25:25,281 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,282 - ERROR - Error in __getitem__ for index 3868: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37408/37408.2/short.txt'
+2025-01-16 19:25:25,290 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,291 - ERROR - Error in __getitem__ for index 3869: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37409/37409.2/short.txt'
+2025-01-16 19:25:25,300 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,308 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,317 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,326 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,336 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,345 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,354 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,362 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-16 19:25:25,371 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:44:07,834 - ERROR - Error in __getitem__ for index 5026: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40042/40042.2/short.txt'
+2025-01-17 21:45:33,476 - ERROR - Error in __getitem__ for index 5027: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40046/40046.2/short.txt'
+2025-01-17 21:46:36,361 - ERROR - Error in __getitem__ for index 5028: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40047/40047.2/short.txt'
+2025-01-17 21:47:52,091 - ERROR - Error in __getitem__ for index 5029: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40049/40049.2/short.txt'
+2025-01-17 21:49:06,433 - ERROR - Error in __getitem__ for index 5030: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40050/40050.2/short.txt'
+2025-01-17 21:50:20,916 - ERROR - Error in __getitem__ for index 5031: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40058/40058.2/short.txt'
+2025-01-17 21:51:41,299 - ERROR - Error in __getitem__ for index 5032: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40059/40059.2/short.txt'
+2025-01-17 21:52:55,926 - ERROR - Error in __getitem__ for index 5033: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40061/40061.2/short.txt'
+2025-01-17 21:54:06,853 - ERROR - Error in __getitem__ for index 5034: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40063/40063.2/short.txt'
+2025-01-17 21:54:06,863 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:06,864 - ERROR - Error in __getitem__ for index 5035: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40071/40071.2/short.txt'
+2025-01-17 21:54:06,872 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:06,873 - ERROR - Error in __getitem__ for index 5036: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40073/40073.2/short.txt'
+2025-01-17 21:54:06,882 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:06,882 - ERROR - Error in __getitem__ for index 5037: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40074/40074.2/short.txt'
+2025-01-17 21:54:06,891 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:06,892 - ERROR - Error in __getitem__ for index 5038: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40075/40075.2/short.txt'
+2025-01-17 21:54:06,900 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:06,901 - ERROR - Error in __getitem__ for index 5039: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40076/40076.2/short.txt'
+2025-01-17 21:54:06,909 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:06,910 - ERROR - Error in __getitem__ for index 5040: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40078/40078.2/short.txt'
+2025-01-17 21:54:06,919 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:06,919 - ERROR - Error in __getitem__ for index 5041: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40080/40080.2/short.txt'
+2025-01-17 21:54:06,928 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:06,928 - ERROR - Error in __getitem__ for index 5042: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40081/40081.2/short.txt'
+2025-01-17 21:54:06,937 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:06,938 - ERROR - Error in __getitem__ for index 5043: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40087/40087.2/short.txt'
+2025-01-17 21:54:06,946 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:06,947 - ERROR - Error in __getitem__ for index 5044: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40088/40088.2/short.txt'
+2025-01-17 21:54:06,955 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:06,956 - ERROR - Error in __getitem__ for index 5045: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40089/40089.2/short.txt'
+2025-01-17 21:54:06,964 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:06,965 - ERROR - Error in __getitem__ for index 5046: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40090/40090.2/short.txt'
+2025-01-17 21:54:06,974 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:06,974 - ERROR - Error in __getitem__ for index 5047: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40093/40093.2/short.txt'
+2025-01-17 21:54:06,983 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:06,983 - ERROR - Error in __getitem__ for index 5048: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40095/40095.2/short.txt'
+2025-01-17 21:54:06,992 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:06,993 - ERROR - Error in __getitem__ for index 5049: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40096/40096.2/short.txt'
+2025-01-17 21:54:07,001 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,002 - ERROR - Error in __getitem__ for index 5050: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40099/40099.2/short.txt'
+2025-01-17 21:54:07,010 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,011 - ERROR - Error in __getitem__ for index 5051: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40100/40100.2/short.txt'
+2025-01-17 21:54:07,020 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,020 - ERROR - Error in __getitem__ for index 5052: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40101/40101.2/short.txt'
+2025-01-17 21:54:07,029 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,029 - ERROR - Error in __getitem__ for index 5053: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40105/40105.2/short.txt'
+2025-01-17 21:54:07,038 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,038 - ERROR - Error in __getitem__ for index 5054: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40106/40106.2/short.txt'
+2025-01-17 21:54:07,047 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,048 - ERROR - Error in __getitem__ for index 5055: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40107/40107.2/short.txt'
+2025-01-17 21:54:07,056 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,057 - ERROR - Error in __getitem__ for index 5056: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40108/40108.2/short.txt'
+2025-01-17 21:54:07,066 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,066 - ERROR - Error in __getitem__ for index 5057: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40109/40109.2/short.txt'
+2025-01-17 21:54:07,075 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,075 - ERROR - Error in __getitem__ for index 5058: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40110/40110.2/short.txt'
+2025-01-17 21:54:07,084 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,084 - ERROR - Error in __getitem__ for index 5059: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40115/40115.2/short.txt'
+2025-01-17 21:54:07,093 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,094 - ERROR - Error in __getitem__ for index 5060: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40116/40116.2/short.txt'
+2025-01-17 21:54:07,102 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,103 - ERROR - Error in __getitem__ for index 5061: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40117/40117.2/short.txt'
+2025-01-17 21:54:07,111 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,112 - ERROR - Error in __getitem__ for index 5062: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40119/40119.2/short.txt'
+2025-01-17 21:54:07,121 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,130 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,139 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,148 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,157 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,166 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,175 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,184 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-17 21:54:07,194 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-19 16:09:30,602 - INFO - Loading processor and model
+2025-01-20 00:39:27,752 - ERROR - Error in __getitem__ for index 381: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30981/30981.3/short.txt'
+2025-01-20 00:40:33,472 - ERROR - Error in __getitem__ for index 382: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30984/30984.3/short.txt'
+2025-01-20 00:41:47,699 - ERROR - Error in __getitem__ for index 383: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30985/30985.3/short.txt'
+2025-01-20 00:43:14,039 - ERROR - Error in __getitem__ for index 384: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30986/30986.3/short.txt'
+2025-01-20 00:45:00,186 - ERROR - Error in __getitem__ for index 385: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30987/30987.3/short.txt'
+2025-01-20 00:46:21,892 - ERROR - Error in __getitem__ for index 386: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30988/30988.3/short.txt'
+2025-01-20 00:47:45,555 - ERROR - Error in __getitem__ for index 387: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30990/30990.3/short.txt'
+2025-01-20 00:48:53,418 - ERROR - Error in __getitem__ for index 388: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30991/30991.3/short.txt'
+2025-01-20 00:50:08,303 - ERROR - Error in __getitem__ for index 389: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30992/30992.3/short.txt'
+2025-01-20 00:50:08,312 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,313 - ERROR - Error in __getitem__ for index 390: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30994/30994.3/short.txt'
+2025-01-20 00:50:08,322 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,323 - ERROR - Error in __getitem__ for index 391: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30995/30995.3/short.txt'
+2025-01-20 00:50:08,332 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,332 - ERROR - Error in __getitem__ for index 392: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30996/30996.3/short.txt'
+2025-01-20 00:50:08,341 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,342 - ERROR - Error in __getitem__ for index 393: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30997/30997.3/short.txt'
+2025-01-20 00:50:08,351 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,351 - ERROR - Error in __getitem__ for index 394: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30998/30998.3/short.txt'
+2025-01-20 00:50:08,360 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,361 - ERROR - Error in __getitem__ for index 395: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31000/31000.3/short.txt'
+2025-01-20 00:50:08,370 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,370 - ERROR - Error in __getitem__ for index 396: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31001/31001.3/short.txt'
+2025-01-20 00:50:08,379 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,380 - ERROR - Error in __getitem__ for index 397: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31002/31002.3/short.txt'
+2025-01-20 00:50:08,389 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,389 - ERROR - Error in __getitem__ for index 398: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31003/31003.3/short.txt'
+2025-01-20 00:50:08,398 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,399 - ERROR - Error in __getitem__ for index 399: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31004/31004.3/short.txt'
+2025-01-20 00:50:08,408 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,408 - ERROR - Error in __getitem__ for index 400: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31005/31005.3/short.txt'
+2025-01-20 00:50:08,417 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,418 - ERROR - Error in __getitem__ for index 401: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31006/31006.3/short.txt'
+2025-01-20 00:50:08,427 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,427 - ERROR - Error in __getitem__ for index 402: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31007/31007.3/short.txt'
+2025-01-20 00:50:08,436 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,437 - ERROR - Error in __getitem__ for index 403: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31009/31009.3/short.txt'
+2025-01-20 00:50:08,446 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,446 - ERROR - Error in __getitem__ for index 404: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31012/31012.3/short.txt'
+2025-01-20 00:50:08,455 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,464 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,474 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,483 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,493 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,502 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,511 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,522 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-20 00:50:08,532 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:06:43,055 - ERROR - Error in __getitem__ for index 1546: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33552/33552.3/short.txt'
+2025-01-21 03:07:59,667 - ERROR - Error in __getitem__ for index 1547: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33553/33553.3/short.txt'
+2025-01-21 03:09:33,119 - ERROR - Error in __getitem__ for index 1548: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33554/33554.3/short.txt'
+2025-01-21 03:10:57,923 - ERROR - Error in __getitem__ for index 1549: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33556/33556.3/short.txt'
+2025-01-21 03:12:23,612 - ERROR - Error in __getitem__ for index 1550: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33557/33557.3/short.txt'
+2025-01-21 03:13:50,097 - ERROR - Error in __getitem__ for index 1551: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33558/33558.3/short.txt'
+2025-01-21 03:15:07,631 - ERROR - Error in __getitem__ for index 1552: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33560/33560.3/short.txt'
+2025-01-21 03:16:33,896 - ERROR - Error in __getitem__ for index 1553: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33561/33561.3/short.txt'
+2025-01-21 03:18:11,900 - ERROR - Error in __getitem__ for index 1554: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33562/33562.3/short.txt'
+2025-01-21 03:18:11,909 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:11,910 - ERROR - Error in __getitem__ for index 1555: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33564/33564.3/short.txt'
+2025-01-21 03:18:11,919 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:11,920 - ERROR - Error in __getitem__ for index 1556: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33567/33567.3/short.txt'
+2025-01-21 03:18:11,928 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:11,929 - ERROR - Error in __getitem__ for index 1557: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33568/33568.3/short.txt'
+2025-01-21 03:18:11,938 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:11,938 - ERROR - Error in __getitem__ for index 1558: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33570/33570.3/short.txt'
+2025-01-21 03:18:11,947 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:11,948 - ERROR - Error in __getitem__ for index 1559: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33573/33573.3/short.txt'
+2025-01-21 03:18:11,956 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:11,957 - ERROR - Error in __getitem__ for index 1560: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33574/33574.3/short.txt'
+2025-01-21 03:18:11,966 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:11,966 - ERROR - Error in __getitem__ for index 1561: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33575/33575.3/short.txt'
+2025-01-21 03:18:11,975 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:11,975 - ERROR - Error in __getitem__ for index 1562: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33576/33576.3/short.txt'
+2025-01-21 03:18:11,984 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:11,984 - ERROR - Error in __getitem__ for index 1563: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33577/33577.3/short.txt'
+2025-01-21 03:18:11,993 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:11,994 - ERROR - Error in __getitem__ for index 1564: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33579/33579.3/short.txt'
+2025-01-21 03:18:12,002 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:12,003 - ERROR - Error in __getitem__ for index 1565: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33582/33582.3/short.txt'
+2025-01-21 03:18:12,012 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:12,012 - ERROR - Error in __getitem__ for index 1566: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33587/33587.3/short.txt'
+2025-01-21 03:18:12,021 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:12,021 - ERROR - Error in __getitem__ for index 1567: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33588/33588.3/short.txt'
+2025-01-21 03:18:12,030 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:12,030 - ERROR - Error in __getitem__ for index 1568: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33589/33589.3/short.txt'
+2025-01-21 03:18:12,039 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:12,040 - ERROR - Error in __getitem__ for index 1569: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33592/33592.3/short.txt'
+2025-01-21 03:18:12,048 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:12,057 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:12,066 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:12,076 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:12,085 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:12,094 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:12,105 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:12,114 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-21 03:18:12,123 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 05:32:15,474 - ERROR - Error in __getitem__ for index 2717: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37340/37340.3/short.txt'
+2025-01-22 05:33:51,072 - ERROR - Error in __getitem__ for index 2718: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37344/37344.3/short.txt'
+2025-01-22 05:35:01,930 - ERROR - Error in __getitem__ for index 2719: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37347/37347.3/short.txt'
+2025-01-22 05:36:26,334 - ERROR - Error in __getitem__ for index 2720: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37349/37349.3/short.txt'
+2025-01-22 05:37:36,639 - ERROR - Error in __getitem__ for index 2721: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37358/37358.3/short.txt'
+2025-01-22 05:39:03,489 - ERROR - Error in __getitem__ for index 2722: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37372/37372.3/short.txt'
+2025-01-22 05:40:21,609 - ERROR - Error in __getitem__ for index 2723: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37379/37379.3/short.txt'
+2025-01-22 05:41:33,360 - ERROR - Error in __getitem__ for index 2724: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37388/37388.3/short.txt'
+2025-01-22 05:42:50,683 - ERROR - Error in __getitem__ for index 2725: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37393/37393.3/short.txt'
+2025-01-22 05:42:50,692 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 05:42:50,693 - ERROR - Error in __getitem__ for index 2726: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37394/37394.3/short.txt'
+2025-01-22 05:42:50,702 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 05:42:50,703 - ERROR - Error in __getitem__ for index 2727: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37401/37401.3/short.txt'
+2025-01-22 05:42:50,711 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 05:42:50,712 - ERROR - Error in __getitem__ for index 2728: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37405/37405.3/short.txt'
+2025-01-22 05:42:50,721 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 05:42:50,721 - ERROR - Error in __getitem__ for index 2729: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37409/37409.3/short.txt'
+2025-01-22 05:42:50,730 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 05:42:50,739 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 05:42:50,748 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 05:42:50,757 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 05:42:50,766 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 05:42:50,775 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 05:42:50,784 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 05:42:50,793 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 05:42:50,802 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 20:03:50,514 - ERROR - Error in __getitem__ for index 3361: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40047/40047.3/short.txt'
+2025-01-22 20:05:33,719 - ERROR - Error in __getitem__ for index 3362: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40063/40063.3/short.txt'
+2025-01-22 20:06:48,259 - ERROR - Error in __getitem__ for index 3363: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40071/40071.3/short.txt'
+2025-01-22 20:08:02,212 - ERROR - Error in __getitem__ for index 3364: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40074/40074.3/short.txt'
+2025-01-22 20:09:41,875 - ERROR - Error in __getitem__ for index 3365: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40078/40078.3/short.txt'
+2025-01-22 20:11:09,699 - ERROR - Error in __getitem__ for index 3366: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40081/40081.3/short.txt'
+2025-01-22 20:12:15,677 - ERROR - Error in __getitem__ for index 3367: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40088/40088.3/short.txt'
+2025-01-22 20:13:42,725 - ERROR - Error in __getitem__ for index 3368: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40089/40089.3/short.txt'
+2025-01-22 20:15:13,038 - ERROR - Error in __getitem__ for index 3369: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40090/40090.3/short.txt'
+2025-01-22 20:15:13,048 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 20:15:13,049 - ERROR - Error in __getitem__ for index 3370: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40093/40093.3/short.txt'
+2025-01-22 20:15:13,058 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 20:15:13,059 - ERROR - Error in __getitem__ for index 3371: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40108/40108.3/short.txt'
+2025-01-22 20:15:13,067 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 20:15:13,068 - ERROR - Error in __getitem__ for index 3372: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40115/40115.3/short.txt'
+2025-01-22 20:15:13,077 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 20:15:13,078 - ERROR - Error in __getitem__ for index 3373: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40116/40116.3/short.txt'
+2025-01-22 20:15:13,086 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 20:15:13,087 - ERROR - Error in __getitem__ for index 3374: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40119/40119.3/short.txt'
+2025-01-22 20:15:13,095 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 20:15:13,105 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 20:15:13,114 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 20:15:13,123 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 20:15:13,132 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 20:15:13,141 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 20:15:13,150 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 20:15:13,159 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-22 20:15:13,169 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-23 03:09:03,685 - INFO - Loading processor and model
+2025-01-23 10:25:03,782 - ERROR - Error in __getitem__ for index 312: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30981/30981.4/short.txt'
+2025-01-23 10:26:21,971 - ERROR - Error in __getitem__ for index 313: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30984/30984.4/short.txt'
+2025-01-23 10:28:04,918 - ERROR - Error in __getitem__ for index 314: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30985/30985.4/short.txt'
+2025-01-23 10:29:35,519 - ERROR - Error in __getitem__ for index 315: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30986/30986.4/short.txt'
+2025-01-23 10:30:52,466 - ERROR - Error in __getitem__ for index 316: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30987/30987.4/short.txt'
+2025-01-23 10:32:20,646 - ERROR - Error in __getitem__ for index 317: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30988/30988.4/short.txt'
+2025-01-23 10:33:48,942 - ERROR - Error in __getitem__ for index 318: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30990/30990.4/short.txt'
+2025-01-23 10:35:08,600 - ERROR - Error in __getitem__ for index 319: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30992/30992.4/short.txt'
+2025-01-23 10:36:05,548 - ERROR - Error in __getitem__ for index 320: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30994/30994.4/short.txt'
+2025-01-23 10:36:05,558 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-23 10:36:05,559 - ERROR - Error in __getitem__ for index 321: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30995/30995.4/short.txt'
+2025-01-23 10:36:05,568 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-23 10:36:05,569 - ERROR - Error in __getitem__ for index 322: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30996/30996.4/short.txt'
+2025-01-23 10:36:05,578 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-23 10:36:05,579 - ERROR - Error in __getitem__ for index 323: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/30997/30997.4/short.txt'
+2025-01-23 10:36:05,587 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-23 10:36:05,588 - ERROR - Error in __getitem__ for index 324: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31000/31000.4/short.txt'
+2025-01-23 10:36:05,597 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-23 10:36:05,597 - ERROR - Error in __getitem__ for index 325: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31001/31001.4/short.txt'
+2025-01-23 10:36:05,606 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-23 10:36:05,607 - ERROR - Error in __getitem__ for index 326: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31002/31002.4/short.txt'
+2025-01-23 10:36:05,616 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-23 10:36:05,617 - ERROR - Error in __getitem__ for index 327: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31004/31004.4/short.txt'
+2025-01-23 10:36:05,626 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-23 10:36:05,626 - ERROR - Error in __getitem__ for index 328: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31005/31005.4/short.txt'
+2025-01-23 10:36:05,635 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-23 10:36:05,636 - ERROR - Error in __getitem__ for index 329: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31007/31007.4/short.txt'
+2025-01-23 10:36:05,645 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-23 10:36:05,645 - ERROR - Error in __getitem__ for index 330: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31009/31009.4/short.txt'
+2025-01-23 10:36:05,654 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-23 10:36:05,655 - ERROR - Error in __getitem__ for index 331: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/31012/31012.4/short.txt'
+2025-01-23 10:36:05,664 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-23 10:36:05,673 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-23 10:36:05,682 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-23 10:36:05,692 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-23 10:36:05,701 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-23 10:36:05,710 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-23 10:36:05,719 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-23 10:36:05,729 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-23 10:36:05,738 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:33:37,092 - ERROR - Error in __getitem__ for index 1218: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33552/33552.4/short.txt'
+2025-01-24 07:35:27,095 - ERROR - Error in __getitem__ for index 1219: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33553/33553.4/short.txt'
+2025-01-24 07:37:42,264 - ERROR - Error in __getitem__ for index 1220: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33554/33554.4/short.txt'
+2025-01-24 07:39:19,200 - ERROR - Error in __getitem__ for index 1221: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33556/33556.4/short.txt'
+2025-01-24 07:41:23,720 - ERROR - Error in __getitem__ for index 1222: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33557/33557.4/short.txt'
+2025-01-24 07:43:31,146 - ERROR - Error in __getitem__ for index 1223: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33558/33558.4/short.txt'
+2025-01-24 07:45:26,013 - ERROR - Error in __getitem__ for index 1224: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33560/33560.4/short.txt'
+2025-01-24 07:46:56,365 - ERROR - Error in __getitem__ for index 1225: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33561/33561.4/short.txt'
+2025-01-24 07:48:39,725 - ERROR - Error in __getitem__ for index 1226: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33562/33562.4/short.txt'
+2025-01-24 07:48:39,737 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:48:39,738 - ERROR - Error in __getitem__ for index 1227: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33564/33564.4/short.txt'
+2025-01-24 07:48:39,747 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:48:39,748 - ERROR - Error in __getitem__ for index 1228: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33567/33567.4/short.txt'
+2025-01-24 07:48:39,757 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:48:39,758 - ERROR - Error in __getitem__ for index 1229: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33568/33568.4/short.txt'
+2025-01-24 07:48:39,767 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:48:39,768 - ERROR - Error in __getitem__ for index 1230: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33570/33570.4/short.txt'
+2025-01-24 07:48:39,778 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:48:39,779 - ERROR - Error in __getitem__ for index 1231: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33573/33573.4/short.txt'
+2025-01-24 07:48:39,788 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:48:39,789 - ERROR - Error in __getitem__ for index 1232: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33575/33575.4/short.txt'
+2025-01-24 07:48:39,799 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:48:39,800 - ERROR - Error in __getitem__ for index 1233: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33576/33576.4/short.txt'
+2025-01-24 07:48:39,808 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:48:39,809 - ERROR - Error in __getitem__ for index 1234: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33577/33577.4/short.txt'
+2025-01-24 07:48:39,818 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:48:39,818 - ERROR - Error in __getitem__ for index 1235: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33582/33582.4/short.txt'
+2025-01-24 07:48:39,827 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:48:39,828 - ERROR - Error in __getitem__ for index 1236: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33587/33587.4/short.txt'
+2025-01-24 07:48:39,837 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:48:39,838 - ERROR - Error in __getitem__ for index 1237: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33589/33589.4/short.txt'
+2025-01-24 07:48:39,846 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:48:39,847 - ERROR - Error in __getitem__ for index 1238: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/33592/33592.4/short.txt'
+2025-01-24 07:48:39,856 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:48:39,865 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:48:39,881 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:48:39,911 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:48:39,921 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:48:39,997 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:48:40,008 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:48:40,018 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-24 07:48:40,029 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-25 06:56:26,616 - ERROR - Error in __getitem__ for index 2021: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37340/37340.4/short.txt'
+2025-01-25 06:59:01,699 - ERROR - Error in __getitem__ for index 2022: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37344/37344.4/short.txt'
+2025-01-25 07:02:13,837 - ERROR - Error in __getitem__ for index 2023: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37349/37349.4/short.txt'
+2025-01-25 07:05:33,204 - ERROR - Error in __getitem__ for index 2024: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37358/37358.4/short.txt'
+2025-01-25 07:07:41,761 - ERROR - Error in __getitem__ for index 2025: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37379/37379.4/short.txt'
+2025-01-25 07:09:49,349 - ERROR - Error in __getitem__ for index 2026: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37393/37393.4/short.txt'
+2025-01-25 07:12:35,065 - ERROR - Error in __getitem__ for index 2027: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37394/37394.4/short.txt'
+2025-01-25 07:15:14,202 - ERROR - Error in __getitem__ for index 2028: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37401/37401.4/short.txt'
+2025-01-25 07:17:53,161 - ERROR - Error in __getitem__ for index 2029: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37409/37409.4/short.txt'
+2025-01-25 07:17:53,188 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-25 07:17:53,201 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-25 07:17:53,242 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-25 07:17:53,267 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-25 07:17:53,282 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-25 07:17:53,295 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-25 07:17:53,304 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-25 07:17:53,314 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-25 07:17:53,324 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-25 17:18:03,584 - ERROR - Error in __getitem__ for index 2391: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40074/40074.4/short.txt'
+2025-01-25 17:19:25,020 - ERROR - Error in __getitem__ for index 2392: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40090/40090.4/short.txt'
+2025-01-25 17:20:37,179 - ERROR - Error in __getitem__ for index 2393: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40093/40093.4/short.txt'
+2025-01-25 17:21:46,008 - ERROR - Error in __getitem__ for index 2394: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40115/40115.4/short.txt'
+2025-01-25 17:23:12,224 - ERROR - Error in __getitem__ for index 2395: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40116/40116.4/short.txt'
+2025-01-25 17:29:00,569 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-25 17:29:00,579 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-25 17:29:00,588 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-25 17:29:00,597 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-01-25 17:29:00,606 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
