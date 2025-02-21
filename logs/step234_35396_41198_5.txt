@@ -1,0 +1,525 @@
+Starting...
+Index: b = 35396, e = 41198, i = 5
+Using GPUs: 6
+CUDA available, using GPU(s): 6
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.56s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.77s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:05<00:01,  1.74s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.73s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.72s/it]
+Processing dataset...
+Processing /home/ltnghia02/dataset/35396/35396.5
+DONE: 91.99s
+Processing /home/ltnghia02/dataset/35397/35397.5
+DONE: 153.52s
+Processing /home/ltnghia02/dataset/35401/35401.5
+DONE: 135.77s
+Processing /home/ltnghia02/dataset/35402/35402.5
+DONE: 133.92s
+Processing /home/ltnghia02/dataset/35404/35404.5
+DONE: 116.48s
+Processing /home/ltnghia02/dataset/35406/35406.5
+DONE: 158.23s
+Processing /home/ltnghia02/dataset/35412/35412.5
+DONE: 163.32s
+Processing /home/ltnghia02/dataset/35415/35415.5
+DONE: 132.96s
+Processing /home/ltnghia02/dataset/35416/35416.5
+DONE: 155.08s
+Processing /home/ltnghia02/dataset/35425/35425.5
+DONE: 118.59s
+Processing /home/ltnghia02/dataset/35441/35441.5
+DONE: 141.49s
+Processing /home/ltnghia02/dataset/35445/35445.5
+DONE: 150.69s
+Processing /home/ltnghia02/dataset/35453/35453.5
+DONE: 126.20s
+Processing /home/ltnghia02/dataset/35461/35461.5
+DONE: 154.48s
+Processing /home/ltnghia02/dataset/35468/35468.5
+DONE: 150.03s
+Processing /home/ltnghia02/dataset/35490/35490.5
+DONE: 124.11s
+Processing /home/ltnghia02/dataset/35494/35494.5
+DONE: 184.82s
+Processing /home/ltnghia02/dataset/35505/35505.5
+DONE: 2093.17s
+Processing /home/ltnghia02/dataset/35509/35509.5
+DONE: 145.07s
+Processing /home/ltnghia02/dataset/35511/35511.5
+DONE: 1866.16s
+Processing /home/ltnghia02/dataset/35514/35514.5
+DONE: 412.66s
+Processing /home/ltnghia02/dataset/35561/35561.5
+DONE: 163.38s
+Processing /home/ltnghia02/dataset/35562/35562.5
+DONE: 172.75s
+Processing /home/ltnghia02/dataset/35565/35565.5
+DONE: 127.31s
+Processing /home/ltnghia02/dataset/35567/35567.5
+DONE: 168.60s
+Processing /home/ltnghia02/dataset/35568/35568.5
+DONE: 131.17s
+Processing /home/ltnghia02/dataset/35572/35572.5
+DONE: 117.87s
+Processing /home/ltnghia02/dataset/35574/35574.5
+DONE: 104.71s
+Processing /home/ltnghia02/dataset/35581/35581.5
+DONE: 132.80s
+Processing /home/ltnghia02/dataset/35587/35587.5
+DONE: 177.37s
+Processing /home/ltnghia02/dataset/35592/35592.5
+DONE: 127.52s
+Processing /home/ltnghia02/dataset/35596/35596.5
+DONE: 174.21s
+Processing /home/ltnghia02/dataset/35598/35598.5
+DONE: 175.25s
+Processing /home/ltnghia02/dataset/35600/35600.5
+DONE: 151.24s
+Processing /home/ltnghia02/dataset/35604/35604.5
+DONE: 135.72s
+Processing /home/ltnghia02/dataset/35606/35606.5
+DONE: 148.04s
+Processing /home/ltnghia02/dataset/35608/35608.5
+DONE: 132.37s
+Processing /home/ltnghia02/dataset/35609/35609.5
+DONE: 144.41s
+Processing /home/ltnghia02/dataset/35613/35613.5
+DONE: 130.85s
+Processing /home/ltnghia02/dataset/35617/35617.5
+DONE: 142.48s
+Processing /home/ltnghia02/dataset/35627/35627.5
+DONE: 150.39s
+Processing /home/ltnghia02/dataset/35628/35628.5
+DONE: 136.97s
+Processing /home/ltnghia02/dataset/35635/35635.5
+DONE: 137.59s
+Processing /home/ltnghia02/dataset/35646/35646.5
+DONE: 248.38s
+Processing /home/ltnghia02/dataset/35667/35667.5
+DONE: 130.71s
+Processing /home/ltnghia02/dataset/35672/35672.5
+DONE: 133.37s
+Processing /home/ltnghia02/dataset/35681/35681.5
+DONE: 130.64s
+Processing /home/ltnghia02/dataset/35683/35683.5
+DONE: 135.79s
+Processing /home/ltnghia02/dataset/35692/35692.5
+DONE: 173.55s
+Processing /home/ltnghia02/dataset/35694/35694.5
+DONE: 149.15s
+Processing /home/ltnghia02/dataset/35709/35709.5
+DONE: 117.80s
+Processing /home/ltnghia02/dataset/35711/35711.5
+DONE: 150.11s
+Processing /home/ltnghia02/dataset/35723/35723.5
+DONE: 143.32s
+Processing /home/ltnghia02/dataset/35724/35724.5
+DONE: 162.65s
+Processing /home/ltnghia02/dataset/35731/35731.5
+DONE: 182.54s
+Processing /home/ltnghia02/dataset/35733/35733.5
+DONE: 160.66s
+Processing /home/ltnghia02/dataset/35763/35763.5
+DONE: 150.96s
+Processing /home/ltnghia02/dataset/35767/35767.5
+DONE: 148.78s
+Processing /home/ltnghia02/dataset/35768/35768.5
+DONE: 141.68s
+Processing /home/ltnghia02/dataset/35773/35773.5
+DONE: 144.92s
+Processing /home/ltnghia02/dataset/35788/35788.5
+DONE: 138.53s
+Processing /home/ltnghia02/dataset/35791/35791.5
+DONE: 159.77s
+Processing /home/ltnghia02/dataset/35794/35794.5
+DONE: 143.58s
+Processing /home/ltnghia02/dataset/35800/35800.5
+DONE: 120.19s
+Processing /home/ltnghia02/dataset/35804/35804.5
+DONE: 97.90s
+Processing /home/ltnghia02/dataset/35805/35805.5
+DONE: 144.34s
+Processing /home/ltnghia02/dataset/35808/35808.5
+DONE: 178.36s
+Processing /home/ltnghia02/dataset/35818/35818.5
+DONE: 136.61s
+Processing /home/ltnghia02/dataset/35821/35821.5
+DONE: 126.19s
+Processing /home/ltnghia02/dataset/35822/35822.5
+DONE: 136.28s
+Processing /home/ltnghia02/dataset/35825/35825.5
+DONE: 126.52s
+Processing /home/ltnghia02/dataset/35829/35829.5
+DONE: 139.49s
+Processing /home/ltnghia02/dataset/35863/35863.5
+DONE: 140.93s
+Processing /home/ltnghia02/dataset/35865/35865.5
+DONE: 116.91s
+Processing /home/ltnghia02/dataset/35875/35875.5
+DONE: 130.54s
+Processing /home/ltnghia02/dataset/35887/35887.5
+DONE: 106.02s
+Processing /home/ltnghia02/dataset/35890/35890.5
+DONE: 171.87s
+Processing /home/ltnghia02/dataset/35894/35894.5
+DONE: 126.36s
+Processing /home/ltnghia02/dataset/35906/35906.5
+DONE: 139.45s
+Processing /home/ltnghia02/dataset/35907/35907.5
+DONE: 156.62s
+Processing /home/ltnghia02/dataset/35909/35909.5
+DONE: 136.51s
+Processing /home/ltnghia02/dataset/35911/35911.5
+DONE: 146.88s
+Processing /home/ltnghia02/dataset/35913/35913.5
+DONE: 162.78s
+Processing /home/ltnghia02/dataset/35933/35933.5
+DONE: 138.33s
+Processing /home/ltnghia02/dataset/35938/35938.5
+DONE: 174.39s
+Processing /home/ltnghia02/dataset/35943/35943.5
+DONE: 176.66s
+Processing /home/ltnghia02/dataset/35958/35958.5
+DONE: 131.66s
+Processing /home/ltnghia02/dataset/35959/35959.5
+DONE: 142.02s
+Processing /home/ltnghia02/dataset/35964/35964.5
+DONE: 125.61s
+Processing /home/ltnghia02/dataset/35976/35976.5
+DONE: 109.97s
+Processing /home/ltnghia02/dataset/35983/35983.5
+DONE: 115.72s
+Processing /home/ltnghia02/dataset/35985/35985.5
+DONE: 137.12s
+Processing /home/ltnghia02/dataset/35986/35986.5
+DONE: 153.28s
+Processing /home/ltnghia02/dataset/35987/35987.5
+DONE: 164.37s
+Processing /home/ltnghia02/dataset/35990/35990.5
+DONE: 180.01s
+Processing /home/ltnghia02/dataset/35993/35993.5
+DONE: 114.30s
+Processing /home/ltnghia02/dataset/35994/35994.5
+DONE: 150.01s
+Processing /home/ltnghia02/dataset/35996/35996.5
+DONE: 110.38s
+Processing /home/ltnghia02/dataset/35997/35997.5
+DONE: 168.59s
+Processing /home/ltnghia02/dataset/36002/36002.5
+DONE: 174.05s
+Processing /home/ltnghia02/dataset/36003/36003.5
+DONE: 120.03s
+Processing /home/ltnghia02/dataset/36013/36013.5
+DONE: 133.04s
+Processing /home/ltnghia02/dataset/36014/36014.5
+DONE: 148.76s
+Processing /home/ltnghia02/dataset/36023/36023.5
+DONE: 163.06s
+Processing /home/ltnghia02/dataset/36032/36032.5
+DONE: 150.49s
+Processing /home/ltnghia02/dataset/36038/36038.5
+DONE: 134.96s
+Processing /home/ltnghia02/dataset/36044/36044.5
+DONE: 136.28s
+Processing /home/ltnghia02/dataset/36046/36046.5
+DONE: 119.45s
+Processing /home/ltnghia02/dataset/36051/36051.5
+DONE: 173.24s
+Processing /home/ltnghia02/dataset/36061/36061.5
+DONE: 139.82s
+Processing /home/ltnghia02/dataset/36078/36078.5
+DONE: 195.28s
+Processing /home/ltnghia02/dataset/36084/36084.5
+DONE: 131.06s
+Processing /home/ltnghia02/dataset/36087/36087.5
+DONE: 139.31s
+Processing /home/ltnghia02/dataset/36130/36130.5
+DONE: 130.17s
+Processing /home/ltnghia02/dataset/36134/36134.5
+DONE: 124.89s
+Processing /home/ltnghia02/dataset/36138/36138.5
+DONE: 126.76s
+Processing /home/ltnghia02/dataset/36180/36180.5
+DONE: 137.45s
+Processing /home/ltnghia02/dataset/36186/36186.5
+DONE: 157.80s
+Processing /home/ltnghia02/dataset/36188/36188.5
+DONE: 152.81s
+Processing /home/ltnghia02/dataset/36196/36196.5
+DONE: 191.95s
+Processing /home/ltnghia02/dataset/36204/36204.5
+DONE: 149.96s
+Processing /home/ltnghia02/dataset/36208/36208.5
+DONE: 103.71s
+Processing /home/ltnghia02/dataset/36210/36210.5
+DONE: 157.65s
+Processing /home/ltnghia02/dataset/36244/36244.5
+DONE: 146.92s
+Processing /home/ltnghia02/dataset/36245/36245.5
+DONE: 166.06s
+Processing /home/ltnghia02/dataset/36246/36246.5
+DONE: 171.80s
+Processing /home/ltnghia02/dataset/36253/36253.5
+DONE: 121.13s
+Processing /home/ltnghia02/dataset/36263/36263.5
+DONE: 160.32s
+Processing /home/ltnghia02/dataset/36269/36269.5
+DONE: 137.41s
+Processing /home/ltnghia02/dataset/36277/36277.5
+DONE: 142.70s
+Processing /home/ltnghia02/dataset/36283/36283.5
+DONE: 161.57s
+Processing /home/ltnghia02/dataset/36288/36288.5
+DONE: 116.81s
+Processing /home/ltnghia02/dataset/36293/36293.5
+DONE: 125.60s
+Processing /home/ltnghia02/dataset/36294/36294.5
+DONE: 146.23s
+Processing /home/ltnghia02/dataset/36295/36295.5
+DONE: 174.16s
+Processing /home/ltnghia02/dataset/36312/36312.5
+DONE: 173.22s
+Processing /home/ltnghia02/dataset/36329/36329.5
+DONE: 160.30s
+Processing /home/ltnghia02/dataset/36343/36343.5
+DONE: 113.87s
+Processing /home/ltnghia02/dataset/36351/36351.5
+DONE: 120.76s
+Processing /home/ltnghia02/dataset/36353/36353.5
+DONE: 149.65s
+Processing /home/ltnghia02/dataset/36368/36368.5
+DONE: 120.89s
+Processing /home/ltnghia02/dataset/36382/36382.5
+DONE: 134.49s
+Processing /home/ltnghia02/dataset/36384/36384.5
+DONE: 157.29s
+Processing /home/ltnghia02/dataset/36385/36385.5
+DONE: 135.72s
+Processing /home/ltnghia02/dataset/36388/36388.5
+DONE: 179.41s
+Processing /home/ltnghia02/dataset/36407/36407.5
+DONE: 162.57s
+Processing /home/ltnghia02/dataset/36419/36419.5
+DONE: 110.67s
+Processing /home/ltnghia02/dataset/36422/36422.5
+DONE: 137.45s
+Processing /home/ltnghia02/dataset/36429/36429.5
+DONE: 164.61s
+Processing /home/ltnghia02/dataset/36430/36430.5
+DONE: 135.75s
+Processing /home/ltnghia02/dataset/36433/36433.5
+DONE: 158.01s
+Processing /home/ltnghia02/dataset/36435/36435.5
+DONE: 130.54s
+Processing /home/ltnghia02/dataset/36437/36437.5
+DONE: 116.42s
+Processing /home/ltnghia02/dataset/36438/36438.5
+DONE: 146.15s
+Processing /home/ltnghia02/dataset/36439/36439.5
+DONE: 161.86s
+Processing /home/ltnghia02/dataset/36441/36441.5
+DONE: 148.76s
+Processing /home/ltnghia02/dataset/36445/36445.5
+DONE: 159.55s
+Processing /home/ltnghia02/dataset/36446/36446.5
+DONE: 146.00s
+Processing /home/ltnghia02/dataset/36447/36447.5
+DONE: 133.95s
+Processing /home/ltnghia02/dataset/36452/36452.5
+DONE: 135.05s
+Processing /home/ltnghia02/dataset/36464/36464.5
+DONE: 153.69s
+Processing /home/ltnghia02/dataset/36467/36467.5
+DONE: 133.08s
+Processing /home/ltnghia02/dataset/36485/36485.5
+DONE: 192.63s
+Processing /home/ltnghia02/dataset/36487/36487.5
+DONE: 189.77s
+Processing /home/ltnghia02/dataset/36490/36490.5
+DONE: 122.95s
+Processing /home/ltnghia02/dataset/36497/36497.5
+DONE: 151.11s
+Processing /home/ltnghia02/dataset/36504/36504.5
+DONE: 148.12s
+Processing /home/ltnghia02/dataset/36506/36506.5
+DONE: 130.27s
+Processing /home/ltnghia02/dataset/36508/36508.5
+DONE: 162.61s
+Processing /home/ltnghia02/dataset/36513/36513.5
+DONE: 131.86s
+Processing /home/ltnghia02/dataset/36521/36521.5
+DONE: 327.24s
+Processing /home/ltnghia02/dataset/36525/36525.5
+DONE: 126.51s
+Processing /home/ltnghia02/dataset/36527/36527.5
+DONE: 153.10s
+Processing /home/ltnghia02/dataset/36528/36528.5
+DONE: 112.56s
+Processing /home/ltnghia02/dataset/36532/36532.5
+DONE: 1393.52s
+Processing /home/ltnghia02/dataset/36539/36539.5
+DONE: 2091.16s
+Processing /home/ltnghia02/dataset/36555/36555.5
+DONE: 1540.23s
+Processing /home/ltnghia02/dataset/36556/36556.5
+DONE: 617.72s
+Processing /home/ltnghia02/dataset/36559/36559.5
+DONE: 2910.05s
+Processing /home/ltnghia02/dataset/36560/36560.5
+DONE: 1777.33s
+Processing /home/ltnghia02/dataset/36569/36569.5
+DONE: 355.24s
+Processing /home/ltnghia02/dataset/36572/36572.5
+DONE: 2025.78s
+Processing /home/ltnghia02/dataset/36575/36575.5
+DONE: 1756.01s
+Processing /home/ltnghia02/dataset/36576/36576.5
+DONE: 1083.85s
+Processing /home/ltnghia02/dataset/36578/36578.5
+DONE: 1592.61s
+Processing /home/ltnghia02/dataset/36589/36589.5
+DONE: 2897.43s
+Processing /home/ltnghia02/dataset/36593/36593.5
+DONE: 676.91s
+Processing /home/ltnghia02/dataset/36609/36609.5
+DONE: 1508.60s
+Processing /home/ltnghia02/dataset/36611/36611.5
+DONE: 2531.22s
+Processing /home/ltnghia02/dataset/36614/36614.5
+DONE: 1058.36s
+Processing /home/ltnghia02/dataset/36616/36616.5
+DONE: 488.91s
+Processing /home/ltnghia02/dataset/36619/36619.5
+DONE: 2342.94s
+Processing /home/ltnghia02/dataset/36622/36622.5
+DONE: 1763.22s
+Processing /home/ltnghia02/dataset/36628/36628.5
+DONE: 130.45s
+Processing /home/ltnghia02/dataset/36630/36630.5
+DONE: 1442.94s
+Processing /home/ltnghia02/dataset/36632/36632.5
+DONE: 1981.23s
+Processing /home/ltnghia02/dataset/36635/36635.5
+DONE: 470.61s
+Processing /home/ltnghia02/dataset/36636/36636.5
+DONE: 1544.72s
+Processing /home/ltnghia02/dataset/36640/36640.5
+DONE: 1996.89s
+Processing /home/ltnghia02/dataset/36644/36644.5
+DONE: 335.36s
+Processing /home/ltnghia02/dataset/36660/36660.5
+DONE: 505.40s
+Processing /home/ltnghia02/dataset/36669/36669.5
+DONE: 128.65s
+Processing /home/ltnghia02/dataset/36672/36672.5
+DONE: 1471.18s
+Processing /home/ltnghia02/dataset/36684/36684.5
+DONE: 1438.87s
+Processing /home/ltnghia02/dataset/36685/36685.5
+DONE: 585.57s
+Processing /home/ltnghia02/dataset/36695/36695.5
+DONE: 1232.84s
+Processing /home/ltnghia02/dataset/36701/36701.5
+DONE: 1324.11s
+Processing /home/ltnghia02/dataset/36704/36704.5
+DONE: 437.33s
+Processing /home/ltnghia02/dataset/36707/36707.5
+DONE: 1065.67s
+Processing /home/ltnghia02/dataset/36708/36708.5
+DONE: 1741.62s
+Processing /home/ltnghia02/dataset/36709/36709.5
+DONE: 238.41s
+Processing /home/ltnghia02/dataset/36713/36713.5
+DONE: 810.55s
+Processing /home/ltnghia02/dataset/36715/36715.5
+DONE: 1380.24s
+Processing /home/ltnghia02/dataset/36718/36718.5
+DONE: 799.17s
+Processing /home/ltnghia02/dataset/36746/36746.5
+DONE: 808.41s
+Processing /home/ltnghia02/dataset/36763/36763.5
+DONE: 1602.40s
+Processing /home/ltnghia02/dataset/36784/36784.5
+DONE: 606.78s
+Processing /home/ltnghia02/dataset/36804/36804.5
+DONE: 635.82s
+Processing /home/ltnghia02/dataset/36806/36806.5
+DONE: 1732.18s
+Processing /home/ltnghia02/dataset/36807/36807.5
+DONE: 843.61s
+Processing /home/ltnghia02/dataset/36848/36848.5
+DONE: 597.80s
+Processing /home/ltnghia02/dataset/36871/36871.5
+DONE: 1633.44s
+Processing /home/ltnghia02/dataset/36880/36880.5
+DONE: 796.35s
+Processing /home/ltnghia02/dataset/36923/36923.5
+DONE: 595.40s
+Processing /home/ltnghia02/dataset/36931/36931.5
+DONE: 1636.00s
+Processing /home/ltnghia02/dataset/36941/36941.5
+DONE: 781.38s
+Processing /home/ltnghia02/dataset/36948/36948.5
+DONE: 123.28s
+Processing /home/ltnghia02/dataset/36955/36955.5
+DONE: 1583.80s
+Processing /home/ltnghia02/dataset/36993/36993.5
+DONE: 1295.77s
+Processing /home/ltnghia02/dataset/36999/36999.5
+DONE: 127.02s
+Processing /home/ltnghia02/dataset/37004/37004.5
+DONE: 893.51s
+Processing /home/ltnghia02/dataset/37011/37011.5
+DONE: 1432.91s
+Processing /home/ltnghia02/dataset/37014/37014.5
+DONE: 773.60s
+Processing /home/ltnghia02/dataset/37017/37017.5
+DONE: 652.99s
+Processing /home/ltnghia02/dataset/37024/37024.5
+DONE: 1377.99s
+Processing /home/ltnghia02/dataset/37056/37056.5
+DONE: 928.69s
+Processing /home/ltnghia02/dataset/37065/37065.5
+DONE: 128.57s
+Processing /home/ltnghia02/dataset/37087/37087.5
+DONE: 1555.25s
+Processing /home/ltnghia02/dataset/37092/37092.5
+Traceback (most recent call last):
+  File "/home/ltnghia02/vischronos/scripts/second.py", line 248, in <module>
+    process_all_steps(args.dataset_path, args.prompt_path, args.img_index, args.begin_index, args.end_index)
+  File "/home/ltnghia02/vischronos/scripts/second.py", line 205, in process_all_steps
+    prompt, answer = process_step_3(caption, question, knowledge, prompts[2])
+  File "/home/ltnghia02/vischronos/scripts/second.py", line 93, in process_step_3
+    generated_text = generate_text(detailed_prompt)
+  File "/home/ltnghia02/vischronos/scripts/second.py", line 69, in generate_text
+    outputs = model.generate(
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/transformers/generation/utils.py", line 2215, in generate
+    result = self._sample(
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/transformers/generation/utils.py", line 3206, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/transformers/models/gemma2/modeling_gemma2.py", line 1049, in forward
+    outputs = self.model(
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/transformers/models/gemma2/modeling_gemma2.py", line 837, in forward
+    layer_outputs = decoder_layer(
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/transformers/models/gemma2/modeling_gemma2.py", line 553, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/transformers/models/gemma2/modeling_gemma2.py", line 255, in forward
+    attn_weights = nn.functional.softmax(attn_weights, dim=-1, dtype=torch.float32).to(query_states.dtype)
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/nn/functional.py", line 2142, in softmax
+    ret = input.softmax(dim, dtype=dtype)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 5.88 GiB. GPU 0 has a total capacity of 79.14 GiB of which 1.66 GiB is free. Including non-PyTorch memory, this process has 31.03 GiB memory in use. Process 2642887 has 46.43 GiB memory in use. Of the allocated memory 30.22 GiB is allocated by PyTorch, and 325.53 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

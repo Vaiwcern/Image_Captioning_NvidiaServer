@@ -25418,3 +25418,17 @@ TypeError: 'NoneType' object is not subscriptable
 2025-02-16 07:21:11,061 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
 2025-02-16 07:21:11,070 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
 2025-02-16 07:21:11,079 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-02-16 21:56:46,954 - ERROR - Error in __getitem__ for index 1687: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37340/37340.5/short.txt'
+2025-02-16 21:58:11,711 - ERROR - Error in __getitem__ for index 1688: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37349/37349.5/short.txt'
+2025-02-16 21:59:20,814 - ERROR - Error in __getitem__ for index 1689: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37393/37393.5/short.txt'
+2025-02-16 22:01:00,624 - ERROR - Error in __getitem__ for index 1690: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37394/37394.5/short.txt'
+2025-02-16 22:02:40,819 - ERROR - Error in __getitem__ for index 1691: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/37401/37401.5/short.txt'
+2025-02-16 22:08:36,680 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-02-16 22:08:36,689 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-02-16 22:08:36,698 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-02-16 22:08:36,707 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-02-16 22:08:36,716 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-02-17 03:26:40,692 - ERROR - Error in __getitem__ for index 1924: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40074/40074.5/short.txt'
+2025-02-17 03:28:34,883 - ERROR - Error in __getitem__ for index 1925: [Errno 2] No such file or directory: '/home/ltnghia02/dataset/40093/40093.5/short.txt'
+2025-02-17 03:38:23,668 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence
+2025-02-17 03:38:23,677 - ERROR - Error in process_batch for step 1: max() arg is an empty sequence

@@ -1,0 +1,73 @@
+Starting...
+Index: b = 30000, e = 41198, i = 5
+Using GPUs: 6
+CUDA available, using GPU(s): 6
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:07,  2.46s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.89s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:05<00:01,  1.71s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.53s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.67s/it]
+Processing dataset...
+Processing /home/ltnghia02/dataset/30002/30002.5
+DONE: 148.93s
+Processing /home/ltnghia02/dataset/30007/30007.5
+DONE: 132.47s
+Processing /home/ltnghia02/dataset/30008/30008.5
+DONE: 147.81s
+Processing /home/ltnghia02/dataset/30013/30013.5
+DONE: 114.08s
+Processing /home/ltnghia02/dataset/30014/30014.5
+DONE: 148.11s
+Processing /home/ltnghia02/dataset/30016/30016.5
+DONE: 105.49s
+Processing /home/ltnghia02/dataset/30017/30017.5
+DONE: 119.84s
+Processing /home/ltnghia02/dataset/30021/30021.5
+DONE: 118.83s
+Processing /home/ltnghia02/dataset/30024/30024.5
+DONE: 139.22s
+Processing /home/ltnghia02/dataset/30027/30027.5
+DONE: 130.25s
+Processing /home/ltnghia02/dataset/30029/30029.5
+DONE: 152.85s
+Processing /home/ltnghia02/dataset/30030/30030.5
+DONE: 141.10s
+Processing /home/ltnghia02/dataset/30036/30036.5
+DONE: 128.66s
+Processing /home/ltnghia02/dataset/30039/30039.5
+DONE: 113.94s
+Processing /home/ltnghia02/dataset/30041/30041.5
+DONE: 152.30s
+Processing /home/ltnghia02/dataset/30043/30043.5
+DONE: 134.38s
+Processing /home/ltnghia02/dataset/30046/30046.5
+DONE: 128.84s
+Processing /home/ltnghia02/dataset/30048/30048.5
+DONE: 124.89s
+Processing /home/ltnghia02/dataset/30058/30058.5
+DONE: 118.86s
+Processing /home/ltnghia02/dataset/30059/30059.5
+DONE: 149.89s
+Processing /home/ltnghia02/dataset/30061/30061.5
+DONE: 127.46s
+Processing /home/ltnghia02/dataset/30068/30068.5
+DONE: 112.97s
+Processing /home/ltnghia02/dataset/30072/30072.5
+DONE: 98.86s
+Processing /home/ltnghia02/dataset/30073/30073.5
+DONE: 119.51s
+Processing /home/ltnghia02/dataset/30075/30075.5
+DONE: 159.14s
+Processing /home/ltnghia02/dataset/30076/30076.5
+DONE: 172.23s
+Processing /home/ltnghia02/dataset/30077/30077.5
+DONE: 159.08s
+Processing /home/ltnghia02/dataset/30083/30083.5
+DONE: 97.34s
+Processing /home/ltnghia02/dataset/30085/30085.5
+DONE: 138.75s
+Processing /home/ltnghia02/dataset/30087/30087.5
+DONE: 125.16s
+Processing /home/ltnghia02/dataset/30091/30091.5
+DONE: 135.91s
+Processing /home/ltnghia02/dataset/30096/30096.5
+DONE: 130.04s
+Processing /home/ltnghia02/dataset/30097/30097.5
+DONE: 130.36s
+Processing /home/ltnghia02/dataset/30099/30099.5

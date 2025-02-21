@@ -1,0 +1,22 @@
+Starting...
+Index: b = 37092, e = 41198, i = 5
+Using GPUs: 4
+CUDA available, using GPU(s): 4
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.43s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.62s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.70s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.59s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.60s/it]
+Processing dataset...
+Processing /home/ltnghia02/dataset/37092/37092.5
+This is a friendly reminder - the current text generation call will exceed the model's predefined maximum length (8192). Depending on the model, you may observe exceptions, performance degradation, or nothing at all.
+DONE: 58.54s
+Processing /home/ltnghia02/dataset/37097/37097.5
+DONE: 150.47s
+Processing /home/ltnghia02/dataset/37100/37100.5
+DONE: 169.17s
+Processing /home/ltnghia02/dataset/37106/37106.5
+DONE: 120.43s
+Processing /home/ltnghia02/dataset/37126/37126.5
+DONE: 130.95s
+Processing /home/ltnghia02/dataset/37156/37156.5
+DONE: 127.18s
+Processing /home/ltnghia02/dataset/37161/37161.5
+DONE: 119.59s
+Processing /home/ltnghia02/dataset/37165/37165.5

@@ -1,0 +1,174 @@
+Starting...
+Index: b = 35000, e = 41198, i = 5
+Using GPUs: 4
+CUDA available, using GPU(s): 4
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:07,  2.41s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:04<00:03,  1.96s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:05<00:01,  1.80s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.61s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.75s/it]
+Processing dataset...
+Processing /home/ltnghia02/dataset/35023/35023.5
+DONE: 142.07s
+Processing /home/ltnghia02/dataset/35025/35025.5
+DONE: 86.53s
+Processing /home/ltnghia02/dataset/35031/35031.5
+DONE: 126.81s
+Processing /home/ltnghia02/dataset/35032/35032.5
+DONE: 111.53s
+Processing /home/ltnghia02/dataset/35045/35045.5
+DONE: 140.13s
+Processing /home/ltnghia02/dataset/35057/35057.5
+DONE: 126.10s
+Processing /home/ltnghia02/dataset/35071/35071.5
+DONE: 96.74s
+Processing /home/ltnghia02/dataset/35074/35074.5
+DONE: 141.82s
+Processing /home/ltnghia02/dataset/35089/35089.5
+DONE: 180.28s
+Processing /home/ltnghia02/dataset/35092/35092.5
+DONE: 156.23s
+Processing /home/ltnghia02/dataset/35096/35096.5
+DONE: 116.57s
+Processing /home/ltnghia02/dataset/35098/35098.5
+DONE: 140.23s
+Processing /home/ltnghia02/dataset/35110/35110.5
+DONE: 112.83s
+Processing /home/ltnghia02/dataset/35115/35115.5
+DONE: 94.63s
+Processing /home/ltnghia02/dataset/35118/35118.5
+DONE: 165.53s
+Processing /home/ltnghia02/dataset/35119/35119.5
+DONE: 101.92s
+Processing /home/ltnghia02/dataset/35121/35121.5
+DONE: 102.63s
+Processing /home/ltnghia02/dataset/35125/35125.5
+DONE: 135.47s
+Processing /home/ltnghia02/dataset/35127/35127.5
+This is a friendly reminder - the current text generation call will exceed the model's predefined maximum length (8192). Depending on the model, you may observe exceptions, performance degradation, or nothing at all.
+DONE: 78.88s
+Processing /home/ltnghia02/dataset/35131/35131.5
+DONE: 107.82s
+Processing /home/ltnghia02/dataset/35137/35137.5
+DONE: 160.50s
+Processing /home/ltnghia02/dataset/35148/35148.5
+DONE: 146.14s
+Processing /home/ltnghia02/dataset/35154/35154.5
+DONE: 145.72s
+Processing /home/ltnghia02/dataset/35158/35158.5
+DONE: 152.03s
+Processing /home/ltnghia02/dataset/35160/35160.5
+DONE: 173.61s
+Processing /home/ltnghia02/dataset/35164/35164.5
+DONE: 136.51s
+Processing /home/ltnghia02/dataset/35168/35168.5
+DONE: 142.59s
+Processing /home/ltnghia02/dataset/35172/35172.5
+DONE: 133.39s
+Processing /home/ltnghia02/dataset/35181/35181.5
+DONE: 103.22s
+Processing /home/ltnghia02/dataset/35186/35186.5
+DONE: 130.74s
+Processing /home/ltnghia02/dataset/35190/35190.5
+DONE: 147.05s
+Processing /home/ltnghia02/dataset/35192/35192.5
+DONE: 157.32s
+Processing /home/ltnghia02/dataset/35194/35194.5
+DONE: 181.27s
+Processing /home/ltnghia02/dataset/35203/35203.5
+DONE: 137.93s
+Processing /home/ltnghia02/dataset/35204/35204.5
+DONE: 142.38s
+Processing /home/ltnghia02/dataset/35217/35217.5
+DONE: 143.87s
+Processing /home/ltnghia02/dataset/35223/35223.5
+DONE: 100.55s
+Processing /home/ltnghia02/dataset/35224/35224.5
+DONE: 169.51s
+Processing /home/ltnghia02/dataset/35226/35226.5
+DONE: 120.67s
+Processing /home/ltnghia02/dataset/35227/35227.5
+DONE: 151.34s
+Processing /home/ltnghia02/dataset/35239/35239.5
+DONE: 128.23s
+Processing /home/ltnghia02/dataset/35240/35240.5
+DONE: 112.95s
+Processing /home/ltnghia02/dataset/35258/35258.5
+DONE: 141.34s
+Processing /home/ltnghia02/dataset/35260/35260.5
+DONE: 122.82s
+Processing /home/ltnghia02/dataset/35263/35263.5
+DONE: 144.98s
+Processing /home/ltnghia02/dataset/35270/35270.5
+DONE: 149.51s
+Processing /home/ltnghia02/dataset/35276/35276.5
+DONE: 151.44s
+Processing /home/ltnghia02/dataset/35279/35279.5
+DONE: 126.95s
+Processing /home/ltnghia02/dataset/35281/35281.5
+DONE: 125.10s
+Processing /home/ltnghia02/dataset/35283/35283.5
+DONE: 121.42s
+Processing /home/ltnghia02/dataset/35291/35291.5
+DONE: 138.76s
+Processing /home/ltnghia02/dataset/35292/35292.5
+DONE: 96.84s
+Processing /home/ltnghia02/dataset/35300/35300.5
+DONE: 101.92s
+Processing /home/ltnghia02/dataset/35305/35305.5
+DONE: 131.32s
+Processing /home/ltnghia02/dataset/35307/35307.5
+DONE: 190.26s
+Processing /home/ltnghia02/dataset/35315/35315.5
+DONE: 133.83s
+Processing /home/ltnghia02/dataset/35316/35316.5
+DONE: 128.35s
+Processing /home/ltnghia02/dataset/35319/35319.5
+DONE: 121.53s
+Processing /home/ltnghia02/dataset/35320/35320.5
+DONE: 173.27s
+Processing /home/ltnghia02/dataset/35325/35325.5
+DONE: 130.68s
+Processing /home/ltnghia02/dataset/35326/35326.5
+DONE: 113.42s
+Processing /home/ltnghia02/dataset/35330/35330.5
+DONE: 118.30s
+Processing /home/ltnghia02/dataset/35335/35335.5
+DONE: 181.94s
+Processing /home/ltnghia02/dataset/35336/35336.5
+DONE: 123.47s
+Processing /home/ltnghia02/dataset/35338/35338.5
+DONE: 124.57s
+Processing /home/ltnghia02/dataset/35348/35348.5
+DONE: 139.48s
+Processing /home/ltnghia02/dataset/35351/35351.5
+DONE: 132.97s
+Processing /home/ltnghia02/dataset/35353/35353.5
+DONE: 138.05s
+Processing /home/ltnghia02/dataset/35359/35359.5
+DONE: 226.32s
+Processing /home/ltnghia02/dataset/35367/35367.5
+DONE: 131.49s
+Processing /home/ltnghia02/dataset/35370/35370.5
+DONE: 172.82s
+Processing /home/ltnghia02/dataset/35371/35371.5
+DONE: 149.54s
+Processing /home/ltnghia02/dataset/35374/35374.5
+DONE: 135.38s
+Processing /home/ltnghia02/dataset/35382/35382.5
+DONE: 158.87s
+Processing /home/ltnghia02/dataset/35385/35385.5
+DONE: 139.92s
+Processing /home/ltnghia02/dataset/35387/35387.5
+DONE: 141.34s
+Processing /home/ltnghia02/dataset/35395/35395.5
+DONE: 142.47s
+Processing /home/ltnghia02/dataset/35396/35396.5
+OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ltnghia02/vischronos/scripts/second.py", line 248, in <module>
+    process_all_steps(args.dataset_path, args.prompt_path, args.img_index, args.begin_index, args.end_index)
+  File "/home/ltnghia02/vischronos/scripts/second.py", line 227, in process_all_steps
+    write_file(all_steps_path, all_steps)
+  File "/home/ltnghia02/vischronos/scripts/second.py", line 59, in write_file
+    with open(file_path, 'w', encoding='utf-8') as file:
+OSError: [Errno 28] No space left on device
