@@ -1,0 +1,27 @@
+Starting...
+Index: b = 40234, e = 41198, i = 5
+Using GPUs: 0,1,2,3,4,5,6,7
+CUDA available, using GPU(s): 0,1,2,3,4,5,6,7
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.62s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.94s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:06<00:02,  2.27s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.93s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:07<00:00,  1.97s/it]
+Processing dataset...
+Processing /home/ltnghia02/dataset/40234/40234.5
+Traceback (most recent call last):
+  File "/home/ltnghia02/vischronos/scripts/second.py", line 248, in <module>
+    process_all_steps(args.dataset_path, args.prompt_path, args.img_index, args.begin_index, args.end_index)
+  File "/home/ltnghia02/vischronos/scripts/second.py", line 199, in process_all_steps
+    prompt, question = process_step_2(caption, prompts[1])
+  File "/home/ltnghia02/vischronos/scripts/second.py", line 84, in process_step_2
+    generated_text = generate_text(detailed_prompt)
+  File "/home/ltnghia02/vischronos/scripts/second.py", line 69, in generate_text
+    outputs = model.generate(
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/transformers/generation/utils.py", line 2084, in generate
+    self._prepare_cache_for_generation(
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/transformers/generation/utils.py", line 1731, in _prepare_cache_for_generation
+    model_kwargs[cache_name] = self._get_cache(
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/transformers/generation/utils.py", line 1637, in _get_cache
+    self._cache = cache_cls(**cache_kwargs)
+  File "/home/ltnghia02/env1/lib/python3.10/site-packages/transformers/cache_utils.py", line 1654, in __init__
+    new_layer_key_cache = torch.zeros(cache_shape, dtype=self.dtype, device=layer_device)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 22.00 MiB. GPU 3 has a total capacity of 79.14 GiB of which 17.62 MiB is free. Process 3532105 has 10.52 GiB memory in use. Process 3042360 has 65.33 GiB memory in use. Including non-PyTorch memory, this process has 3.24 GiB memory in use. Of the allocated memory 2.76 GiB is allocated by PyTorch, and 1.81 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
