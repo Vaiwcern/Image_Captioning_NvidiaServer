@@ -13,7 +13,7 @@ def clone_filtered_folders(root_folder, destination_folder):
             
             try:
                 index = float(subsubfolder.split(".")[1])
-                if not (1 <= index <= 5):
+                if not (3 <= index <= 5):
                     continue
             except (ValueError, IndexError):
                 continue
@@ -39,7 +39,7 @@ def clone_filtered_folders(root_folder, destination_folder):
             print(f"Copied {caption_path} to {dest_subfolder_path}")
 
 # Example usage
-root_folder = "/home/ltnghia02/dataset"  # Change to your actual root folder
-destination_folder = "/home/ltnghia02/generated_data_30_40/" # Change to your desired destination path
+root_folder = "/raid/hvtham/TTPhuc/molmo/sub_dataset" # Change to your actual root folder
+destination_folder = "/home/ltnghia02/generated_data_20_30_345" # Change to your desired destination path
 clone_filtered_folders(root_folder, destination_folder)
 
